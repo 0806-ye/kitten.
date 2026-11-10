@@ -1,0 +1,2599 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="theme-color" content="#ffb6bd">
+    <title>传讯</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ffb6bd'/%3E%3Cstop offset='100%25' style='stop-color:%23ffd7d5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Cpath d='M50 22c-15.5 0-28 10.3-28 23s12.5 23 28 23c3.2 0 6.2-.5 9-1.3l7.8 4.5-2-8.5c7.6-4.7 13.2-13 13.2-22.7 0-12.7-12.5-23-28-23z' fill='%23fff' opacity='0.95'/%3E%3Ccircle cx='38' cy='45' r='4' fill='%23ffb6bd'/%3E%3Ccircle cx='50' cy='45' r='4' fill='%23ffb6bd'/%3E%3Ccircle cx='62' cy='45' r='4' fill='%23ffb6bd'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ffb6bd'/%3E%3Cstop offset='100%25' style='stop-color:%23ffd7d5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Cpath d='M50 22c-15.5 0-28 10.3-28 23s12.5 23 28 23c3.2 0 6.2-.5 9-1.3l7.8 4.5-2-8.5c7.6-4.7 13.2-13 13.2-22.7 0-12.7-12.5-23-28-23z' fill='%23fff' opacity='0.95'/%3E%3Ccircle cx='38' cy='45' r='4' fill='%23ffb6bd'/%3E%3Ccircle cx='50' cy='45' r='4' fill='%23ffb6bd'/%3E%3Ccircle cx='62' cy='45' r='4' fill='%23ffb6bd'/%3E%3C/svg%3E">
+    <link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoi5qKm6KeS5Lyg6K6eIiwic2hvcnRfbmFtZSI6IuaisuinkCIsInN0YXJ0X3VybCI6Ii4iLCJkaXNwbGF5Ijoic3RhbmRhbG9uZSIsImJhY2tncm91bmRfY29sb3IiOiIjZmZlZWI2IiwidGhlbWVfY29sb3IiOiIjZmZiNmJkIiwiaWNvbnMiOlt7InNyYyI6ImRhdGE6aW1hZ2Uvc3ZnK3htbCw8c3ZnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zycgdmlld0JveD0nMCAwIDEwMCAxMDAnPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0nZycgeDE9JzAlJyB5MT0nMCUnIHgyPScxMDAlJyB5Mj0nMTAwJSc+PHN0b3Agb2Zmc2V0PScwJScgc3R5bGU9J3N0b3AtY29sb3I6I2ZmYjZiZCcvPjxzdG9wIG9mZnNldD0nMTAwJScgc3R5bGU9J3N0b3AtY29sb3I6I2ZmZDdkNScvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPScxMDAnIGhlaWdodD0nMTAwJyByeD0nMjInIGZpbGw9J3VybCgjZyknLz48cGF0aCBkPSdNNTAgMjJjLTE1LjUgMC0yOCAxMC4zLTI4IDIzczEyLjUgMjMgMjggMjNjMy4yIDAgNi4yLS41IDktMS4zbDcuOCA0LjUtMi04LjVjNy42LTQuNyAxMy4yLTEzIDEzLjItMjIuNyAwLTEyLjctMTIuNS0yMy0yOC0yM3onIGZpbGw9JyNmZmYnIG9wYWNpdHk9JzAuOTUnLz48Y2lyY2xlIGN4PSczOCcgY3k9JzQ1JyByPSc0JyBmaWxsPScjZmZiNmJkJy8+PGNpcmNsZSBjeD0nNTAnIGN5PSc0NScgcj0nNCcgZmlsbD0nI2ZmYjZiZCcvPjxjaXJjbGUgY3g9JzYyJyBjeT0nNDUnIHI9JzQnIGZpbGw9JyNmZmI2YmQnLz48L3N2Zz4iLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2Uvc3ZnK3htbCJ9XX0=">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- 启动加载遮罩: 消除数据/图片水合期间的白屏 -->
+        <div id="appLoading" class="app-loading"><div class="app-loading-spinner"></div></div>
+        <!-- ========== 首页 ========== -->
+        <div id="homePage" class="page active">
+            <div class="home-content">
+                <div class="home-brand">
+                    <h1 class="home-title">猫咪·Paradise</h1>
+                    <p class="home-subtitle">字卡传讯</p>
+                </div>
+                <div class="home-clock">
+                    <div class="home-time" id="homeTime">--:--</div>
+                    <div class="home-date" id="homeDate"></div>
+                </div>
+                <div class="home-cards">
+                    <div class="home-card" id="homeChatCard">
+                        <div class="home-card-title">聊天</div>
+                        <div class="home-card-sub">和他说话</div>
+                    </div>
+                    <div class="home-card" id="homeDivineCard">
+                        <div class="home-card-title">占卜</div>
+                        <div class="home-card-sub">抽牌与连线</div>
+                    </div>
+                </div>
+                <div class="home-quote" id="homeQuote"></div>
+            </div>
+        </div>
+
+        <!-- ========== 聊天列表页面 ========== -->
+        <div id="chatListPage" class="page">
+            <header class="app-header glass">
+                <div class="header-left">
+                    <button class="icon-btn" id="backToHomeBtn" title="返回首页">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <div class="header-search-wrap">
+                        <button class="icon-btn" id="searchToggleBtn" title="搜索">
+                            <svg viewBox="0 0 24 24" class="icon"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </button>
+                        <div class="header-search-box" id="headerSearchBox">
+                            <input type="text" id="searchInput" placeholder="搜索联系人..." />
+                        </div>
+                    </div>
+                </div>
+                <h1 class="header-title">传讯</h1>
+                <div class="header-right">
+                    <button class="icon-btn" id="addContactBtn" title="新建">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+            </header>
+
+            <div class="page-content chat-list-content">
+                <div id="chatList" class="chat-list"></div>
+                <div id="emptyTip" class="empty-tip hidden">
+                    <svg viewBox="0 0 24 24" class="empty-icon"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                    <p>还没有联系人哦~</p>
+                    <p class="sub">点击右上角 + 开始创建你的第一个梦角吧</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 聊天详情页面 ========== -->
+        <div id="chatDetailPage" class="page">
+            <div id="chatBgOverlay" class="chat-bg-overlay"></div>
+            <header class="app-header detail-header glass">
+                <button class="icon-btn" id="backToListBtn">
+                    <svg viewBox="0 0 24 24" class="icon"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div class="contact-info" id="detailContactInfo">
+                    <div class="contact-text">
+                        <div class="nickname" id="detailNickname">梦角</div>
+                        <div class="status-text" id="detailStatus"></div>
+                    </div>
+                </div>
+                <button class="icon-btn" id="chatSettingBtn">
+                    <svg viewBox="0 0 24 24" class="icon"><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09c0 .68.4 1.3.99 1.51.59.2 1.22-.01 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82c.2.59.83.99 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                </button>
+            </header>
+
+            <div id="messagesContainer" class="page-content messages-container"></div>
+
+            <!-- 正在输入提示 (输入框上方胶囊形) -->
+            <div id="typingStatusBar" class="typing-status-bar hidden">
+                <div class="typing-capsule glass">
+                    <div class="typing-avatar" id="typingAvatar"></div>
+                    <span class="typing-label">正在输入</span>
+                    <span class="typing-dots">
+                        <i></i><i></i><i></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="input-area glass" id="chatInputArea">
+                <div class="lurk-notice hidden" id="lurkNotice">你在群外潜水围观，只能看不能发言</div>
+                <div id="quoteBar" class="quote-bar hidden">
+                    <div class="quote-main">
+                        <span class="quote-label" id="quoteLabel">引用</span>
+                        <span class="quote-text" id="quoteText"></span>
+                    </div>
+                    <button class="quote-close" id="quoteCloseBtn" title="取消引用">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+                <button class="icon-btn circle" id="emojiBtn" title="表情">
+                    <svg viewBox="0 0 24 24" class="icon"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="9" cy="10" r="1.4" fill="currentColor"/><circle cx="15" cy="10" r="1.4" fill="currentColor"/><path d="M8.5 14.5A5 5 0 0 0 12 16.5a5 5 0 0 0 3.5-2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                </button>
+                <button class="icon-btn circle" id="imageBtn" title="图片">
+                    <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="8.5" cy="8.5" r="1.8" fill="currentColor"/><path d="m21 15-5-5L5 21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <button class="icon-btn circle" id="videoCallBtn" title="视频通话">
+                    <svg viewBox="0 0 24 24" class="icon"><rect x="2" y="6" width="14" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m22 8-6 4 6 4V8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                </button>
+                <input type="file" id="imageInput" accept="image/*" hidden>
+                <div class="input-wrapper" id="inputWrapper">
+                    <textarea id="messageInput" placeholder="输入消息..." rows="1"></textarea>
+                </div>
+                <button class="hold-to-talk hidden" id="holdToTalk" title="按住说话">
+                    <svg viewBox="0 0 24 24" class="icon"><path d="M12 14a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v5a3 3 0 0 0 3 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span class="htt-label">按住说话</span>
+                </button>
+                <button class="icon-btn circle" id="voiceBtn" title="语音">
+                    <svg viewBox="0 0 24 24" class="icon icon-mic"><path d="M12 14a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v5a3 3 0 0 0 3 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <svg viewBox="0 0 24 24" class="icon icon-kbd"><rect x="2" y="6" width="20" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M6 10h12M6 13h2M10 13h2M14 13h4M7 16h10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                </button>
+                <button class="icon-btn send-btn" id="sendBtn" title="发送">
+                    <svg viewBox="0 0 24 24" class="icon"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+            </div>
+
+            <!-- 表情面板 -->
+            <div id="emojiPanel" class="emoji-panel glass hidden">
+                <div class="emoji-tabs">
+                    <button class="emoji-tab active" data-tab="common">通用</button>
+                    <button class="emoji-tab" data-tab="exclusive">专属</button>
+                    <button class="emoji-tab" data-tab="pat">拍一拍</button>
+                </div>
+                <div class="emoji-pat-wrap hidden" id="emojiPatWrap">
+                    <div class="pat-input-row">
+                        <input type="text" id="patInput" placeholder="输入拍一拍内容, 例如: 拍了拍小脸说真可爱~" maxlength="40" />
+                        <button class="btn btn-primary btn-sm" id="patSendBtn">发送</button>
+                    </div>
+                    <div class="pat-quick-list" id="patQuickList">
+                        <span class="pat-quick-item">拍了拍</span>
+                        <span class="pat-quick-item">拍了拍肩膀</span>
+                        <span class="pat-quick-item">拍了拍小脸</span>
+                        <span class="pat-quick-item">摸了摸头</span>
+                        <span class="pat-quick-item">戳了戳</span>
+                        <span class="pat-quick-item">抱了抱</span>
+                        <span class="pat-quick-item">捏了捏脸</span>
+                        <span class="pat-quick-item">亲了一下</span>
+                    </div>
+                </div>
+                <div class="emoji-grid" id="emojiGrid"></div>
+                <div class="emoji-add-wrap hidden" id="emojiAddWrap">
+                    <button class="btn btn-outline btn-sm" id="addCommonEmojiBtn">+ 添加</button>
+                </div>
+            </div>
+
+            <!-- ========== 视频通话弹窗 ========== -->
+            <div class="vc-mask" id="videoCallMask">
+                <div class="vc-modal" id="videoCallModal">
+                    <!-- 顶栏 -->
+                    <div class="vc-topbar">
+                        <div class="vc-status">
+                            <span class="vc-status-dot"></span>
+                            <span class="vc-status-text" id="vcStatusText">连接中</span>
+                        </div>
+                        <div class="vc-topbar-actions">
+                            <button class="vc-icon-btn" id="vcExpandBtn" title="调整大小">
+                                <svg viewBox="0 0 24 24" class="icon"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </button>
+                            <div class="vc-size-menu hidden" id="vcSizeMenu">
+                                <div class="vc-size-item" data-size="mini">
+                                    <svg viewBox="0 0 24 24" class="vc-size-icon"><path d="M21 9h-6V3M3 15h6v6M21 9l-7-7M3 15l7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    <span>迷你</span>
+                                </div>
+                                <div class="vc-size-item" data-size="small">
+                                    <svg viewBox="0 0 24 24" class="vc-size-icon"><path d="M8 6h8a2 2 0 0 1 2 2v3H6V8a2 2 0 0 1 2-2zM6 13h12v3a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-3z" fill="currentColor"/></svg>
+                                    <span>小</span>
+                                </div>
+                                <div class="vc-size-item" data-size="standard">
+                                    <svg viewBox="0 0 24 24" class="vc-size-icon"><rect x="6" y="6" width="12" height="12" fill="currentColor"/></svg>
+                                    <span>标准</span>
+                                </div>
+                                <div class="vc-size-item" data-size="large">
+                                    <svg viewBox="0 0 24 24" class="vc-size-icon"><path d="M7 14H5v5h5v-2H7v-3zM17 10h2V5h-5v2h3v3zM7 10V7h3V5H5v5h2zM14 17h3v-3h2v5h-5v-2z" fill="currentColor"/></svg>
+                                    <span>大</span>
+                                </div>
+                            </div>
+                            <button class="vc-icon-btn" id="vcMinimizeBtn" title="最小化">
+                                <svg viewBox="0 0 24 24" class="icon"><path d="M5 12h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- 主体 -->
+                    <div class="vc-body" id="vcBody">
+                        <div class="vc-avatar" id="vcAvatar"></div>
+                        <div class="vc-name" id="vcName">梦角</div>
+                        <div class="vc-substatus" id="vcSubstatus">
+                            <span id="vcSubText">正在连接</span>
+                        </div>
+                        <div class="vc-dots">
+                            <i></i><i></i><i></i>
+                        </div>
+                    </div>
+                    <!-- 控制栏 -->
+                    <div class="vc-controls">
+                        <button class="vc-ctrl-btn" id="vcImmersiveBtn" title="沉浸模式">
+                            <svg viewBox="0 0 24 24" class="icon"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path class="vc-eye-slash" d="M3 3l18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                        </button>
+                        <div class="vc-piano-keys hidden" id="vcPianoKeys">
+                            <i></i><i></i><i></i><i></i><i></i>
+                        </div>
+                        <button class="vc-ctrl-btn" id="vcBgBtn" title="更换背景">
+                            <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8.5" cy="8.5" r="1.8" fill="currentColor"/><path d="m21 15-5-5L5 21" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                        <input type="file" id="vcBgInput" accept="image/*" hidden>
+                    </div>
+                    <!-- 挂断按钮 -->
+                    <button class="vc-hangup" id="vcHangupBtn" title="挂断">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M10.68 13.31a16 16 0 0 0 3.41 2.6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 1.72 2v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 2.59 3.4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><line x1="23" y1="1" x2="1" y2="23" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                    </button>
+                    <!-- 尺寸调整手柄 -->
+                    <div class="vc-resize-handle" id="vcResizeHandle">
+                        <svg viewBox="0 0 16 16" class="vc-resize-icon"><path d="M16 6 L6 16 M16 10 L10 16 M16 14 L14 16" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </div>
+                </div>
+            </div>
+            <!-- 视频通话胶囊（最小化） -->
+            <div class="vc-pill hidden" id="vcPill">
+                <div class="vc-pill-avatar" id="vcPillAvatar"></div>
+                <div class="vc-pill-info">
+                    <div class="vc-pill-name" id="vcPillName">梦角</div>
+                    <div class="vc-pill-time" id="vcPillTime">00:00</div>
+                </div>
+                <button class="vc-pill-hangup" id="vcPillHangup" title="挂断">
+                    <svg viewBox="0 0 24 24" class="icon"><path d="M10.68 13.31a16 16 0 0 0 3.41 2.6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 1.72 2v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 2.59 3.4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><line x1="23" y1="1" x2="1" y2="23" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- ========== 梦角来电弹窗 (置于页面容器之外, 确保任意页面均可弹出) ========== -->
+        <div class="incoming-call-mask" id="incomingCallMask">
+            <div class="incoming-call-card">
+                <div class="incoming-avatar" id="incomingAvatar"></div>
+                <div class="incoming-name" id="incomingName">梦角</div>
+                <div class="incoming-tip">
+                    <span class="incoming-dot"></span>
+                    <span>邀请您进行视频通话</span>
+                </div>
+                <div class="incoming-actions">
+                    <button class="incoming-btn incoming-reject" id="incomingRejectBtn" title="拒绝">
+                        <span class="incoming-btn-icon">
+                            <svg viewBox="0 0 24 24"><path d="M10.68 13.31a16 16 0 0 0 3.41 2.6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 1.72 2v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 2.59 3.4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><line x1="23" y1="1" x2="1" y2="23" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                        </span>
+                        <span>拒绝</span>
+                    </button>
+                    <button class="incoming-btn incoming-accept" id="incomingAcceptBtn" title="接听">
+                        <span class="incoming-btn-icon">
+                            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <span>接听</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 群聊设置页面 ========== -->
+        <div id="groupSettingPage" class="page">
+            <header class="app-header glass">
+                <button class="icon-btn" id="groupSettingBackBtn" title="返回">
+                    <svg viewBox="0 0 24 24" class="icon"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <h1 class="header-title">群聊设置</h1>
+                <div style="width:40px;"></div>
+            </header>
+            <div class="page-content" id="groupSettingContent"></div>
+            <input type="file" id="groupAvatarInput" accept="image/*" hidden>
+        </div>
+
+        <!-- ========== 群聊成员页面 ========== -->
+        <div id="groupMembersPage" class="page">
+            <header class="app-header glass">
+                <button class="icon-btn" id="groupMembersBackBtn" title="返回">
+                    <svg viewBox="0 0 24 24" class="icon"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <h1 class="header-title">群聊成员</h1>
+                <button class="icon-btn" id="groupMembersMoreBtn" title="更多">
+                    <svg viewBox="0 0 24 24" class="icon"><circle cx="5" cy="12" r="1.8" fill="currentColor"/><circle cx="12" cy="12" r="1.8" fill="currentColor"/><circle cx="19" cy="12" r="1.8" fill="currentColor"/></svg>
+                </button>
+            </header>
+            <div class="page-content" id="groupMembersContent"></div>
+            <div class="gm-remove-bar hidden" id="gmRemoveBar">
+                <button class="btn btn-secondary" id="gmRemoveCancel">取消</button>
+                <button class="btn btn-primary" id="gmRemoveConfirm">确认移除</button>
+            </div>
+        </div>
+
+        <!-- ========== 朋友圈页面 ========== -->
+        <div id="momentsPage" class="page">
+            <header class="app-header glass">
+                <h1 class="header-title">发现</h1>
+            </header>
+            <div class="page-content moments-content">
+            </div>
+        </div>
+
+        <!-- ========== 用户朋友圈页面 ========== -->
+        <div id="userMomentsPage" class="page">
+            <div class="um-cover" id="userMomentsCover">
+                <button class="um-back-btn" id="userMomentsBackBtn" title="返回">
+                    <svg viewBox="0 0 24 24" class="icon"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div class="um-cover-actions">
+                    <button class="um-action-btn" id="userMomentsSearchBtn" title="搜索">
+                        <svg viewBox="0 0 24 24" class="icon"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.35-4.35" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <button class="um-action-btn" id="userMomentsInteractBtn" title="互动消息">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </div>
+                <div class="um-cover-overlay" id="userMomentsCoverOverlay">
+                    <button class="um-change-cover-btn" id="userMomentsChangeCoverBtn">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="13" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+                        <span>换封面</span>
+                    </button>
+                </div>
+                <input type="file" id="userMomentsCoverInput" accept="image/*" style="display:none">
+                <div class="um-nickname" id="userMomentsNickname"></div>
+                <div class="um-avatar" id="userMomentsAvatar"></div>
+                <div class="um-signature" id="userMomentsSignature"></div>
+            </div>
+            <div class="um-body">
+                <div class="um-today-row">
+                    <span class="um-today-label">今天</span>
+                    <button class="um-publish-btn" id="userMomentsPublishBtn">
+                        <svg viewBox="0 0 24 24" class="um-publish-icon"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="13" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+                        <span>发表</span>
+                    </button>
+                </div>
+                <div class="um-moments-list" id="userMomentsList"></div>
+            </div>
+        </div>
+
+        <!-- ========== 朋友圈搜索页面 ========== -->
+        <div id="momentsSearchPage" class="page">
+            <header class="ms-header">
+                <div class="ms-search-box">
+                    <svg class="ms-search-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.35-4.35" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    <input type="text" id="momentsSearchInput" class="ms-input" placeholder="搜索朋友圈">
+                    <button class="ms-clear-btn" id="momentsSearchClearBtn" title="清除" style="display:none;">×</button>
+                </div>
+                <button class="ms-cancel-btn" id="momentsSearchCancelBtn">取消</button>
+            </header>
+            <div class="ms-results" id="momentsSearchResults"></div>
+            <div class="ms-end" id="momentsSearchEnd" style="display:none;">— 以上为全部搜索结果 —</div>
+        </div>
+
+        <!-- ========== 朋友圈互动消息页面 ========== -->
+    <div id="momentsInteractPage" class="page">
+        <header class="mi-header">
+            <button class="mi-back-btn" id="momentsInteractBackBtn" title="返回">
+                <svg viewBox="0 0 24 24" class="icon"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <span class="mi-title">全部互动消息</span>
+        </header>
+        <div class="mi-list" id="momentsInteractList"></div>
+        <div class="mi-end" id="momentsInteractEnd" style="display:none;">— 以上为全部互动消息 —</div>
+    </div>
+
+    <!-- ========== 朋友圈聚合页 ========== -->
+        <div id="momentsFeedPage" class="page">
+            <div class="um-cover" id="momentsFeedCover">
+                <button class="um-back-btn" id="momentsFeedBackBtn" title="返回">
+                    <svg viewBox="0 0 24 24" class="icon"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div class="um-cover-overlay" id="momentsFeedCoverOverlay">
+                    <button class="um-change-cover-btn" id="momentsFeedChangeCoverBtn">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="13" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+                        <span>换封面</span>
+                    </button>
+                </div>
+                <input type="file" id="momentsFeedCoverInput" accept="image/*" style="display:none">
+                <div class="um-nickname" id="momentsFeedNickname"></div>
+                <div class="um-avatar" id="momentsFeedAvatar"></div>
+            </div>
+            <div class="um-body">
+                <div class="um-moments-list" id="momentsFeedList"></div>
+            </div>
+        </div>
+
+        <!-- ========== 朋友圈编辑页面 ========== -->
+        <div id="momentsEditPage" class="page">
+            <header class="um-edit-header">
+                <button class="um-edit-cancel" id="momentsEditCancelBtn">取消</button>
+                <button class="um-edit-publish" id="momentsEditPublishBtn">发表</button>
+            </header>
+            <div class="um-edit-body">
+                <textarea class="um-edit-textarea" id="momentsEditTextarea" placeholder="这一刻的想法..." rows="4"></textarea>
+                <div class="um-edit-media">
+                    <div class="um-edit-images" id="momentsEditImages"></div>
+                    <button class="um-edit-add-btn" id="momentsEditAddBtn">
+                        <svg viewBox="0 0 24 24" class="um-edit-add-icon"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <input type="file" id="momentsEditFileInput" accept="image/*" multiple style="display:none">
+                </div>
+                <div class="um-edit-options">
+                    <div class="um-edit-option" id="momentsEditLocationBtn">
+                        <svg viewBox="0 0 24 24" class="um-edit-option-icon"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="9" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+                        <span class="um-edit-option-label">所在位置</span>
+                        <span class="um-edit-option-arrow">›</span>
+                    </div>
+                    <div class="um-edit-option" id="momentsEditRemindBtn">
+                        <span class="um-edit-option-icon" style="font-size: 24px; font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; line-height: 1; display: inline-flex; align-items: center; justify-content: center;">@</span>
+                        <span class="um-edit-option-label">提醒谁看</span>
+                        <span class="um-edit-option-arrow">›</span>
+                    </div>
+                    <div class="um-edit-option" id="momentsEditVisibleBtn">
+                        <svg viewBox="0 0 24 24" class="um-edit-option-icon"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5C21.27 7.61 17 4.5 12 4.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+                        <div class="um-edit-option-info">
+                            <span class="um-edit-option-label">谁可以看</span>
+                            <span class="um-edit-option-sub"></span>
+                        </div>
+                        <span class="um-edit-option-value"></span>
+                        <span class="um-edit-option-arrow">›</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 提醒谁看页面 ========== -->
+        <div id="remindPage" class="page">
+            <header class="remind-header">
+                <button class="remind-back" id="remindBackBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <span class="remind-title">提醒谁看</span>
+                <button class="remind-confirm" id="remindConfirmBtn">确定</button>
+            </header>
+            <div class="remind-search-bar">
+                <div class="remind-selected-list" id="remindSelectedList"></div>
+                <div class="remind-search-input-wrap">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                    <input type="text" class="remind-search-input" id="remindSearchInput" placeholder="搜索" />
+                </div>
+            </div>
+            <div class="remind-list" id="remindContactList"></div>
+        </div>
+
+        <!-- ========== 谁可以看页面 ========== -->
+        <div id="visiblePage" class="page">
+            <header class="remind-header">
+                <button class="remind-back" id="visibleBackBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <span class="remind-title">谁可以看</span>
+                <button class="remind-confirm" id="visibleConfirmBtn">完成</button>
+            </header>
+            <div class="visible-list" id="visibleList"></div>
+        </div>
+
+        <!-- ========== 个人页面 ========== -->
+        <div id="profilePage" class="page">
+            <header class="app-header glass"></header>
+            <div class="page-content profile-content" id="profileContent">
+            </div>
+        </div>
+
+        <!-- ========== 收藏页面 ========== -->
+        <div id="favoritesPage" class="page">
+            <header class="app-header glass">
+                <button class="icon-btn" id="favoritesBackBtn" title="返回">
+                    <svg viewBox="0 0 24 24" class="icon"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <h1 class="header-title">收藏</h1>
+                <div style="width:40px;"></div>
+            </header>
+            <div class="page-content" id="favoritesContent"></div>
+        </div>
+
+        <!-- ========== 信箱页面 ========== -->
+        <div id="mailboxPage" class="page">
+            <header class="app-header glass">
+                <button class="icon-btn" id="mailboxBackBtn" title="返回">
+                    <svg viewBox="0 0 24 24" class="icon"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <h1 class="header-title">信箱</h1>
+                <div style="width:40px;"></div>
+            </header>
+            <div class="page-content" id="mailboxContent"></div>
+        </div>
+
+        <!-- ========== 寄出的信页面 ========== -->
+        <div id="mailboxSentPage" class="page">
+            <header class="app-header glass">
+                <button class="icon-btn" id="mailboxSentBackBtn" title="返回">
+                    <svg viewBox="0 0 24 24" class="icon"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <h1 class="header-title">寄出的信</h1>
+                <div style="width:40px;"></div>
+            </header>
+            <div class="page-content" id="mailboxSentContent"></div>
+            <div class="mailbox-sent-bar" id="mailboxSentBar"></div>
+        </div>
+
+        <!-- ========== 写信页面 ========== -->
+        <div id="mailboxWritePage" class="page">
+            <header class="app-header glass">
+                <button class="icon-btn" id="mailboxWriteBackBtn" title="返回">
+                    <svg viewBox="0 0 24 24" class="icon"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <h1 class="header-title" id="mailboxWriteTitle">写信</h1>
+                <div style="width:40px;"></div>
+            </header>
+            <div class="page-content" id="mailboxWriteContent"></div>
+            <div class="mailbox-sent-bar" id="mailboxWriteBar"></div>
+        </div>
+
+        <!-- ========== 收到的回信页面 ========== -->
+        <div id="mailboxReceivedPage" class="page">
+            <header class="app-header glass">
+                <button class="icon-btn" id="mailboxReceivedBackBtn" title="返回">
+                    <svg viewBox="0 0 24 24" class="icon"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <h1 class="header-title">收到的回信</h1>
+                <div style="width:40px;"></div>
+            </header>
+            <div class="page-content" id="mailboxReceivedContent"></div>
+        </div>
+
+        <!-- ========== 他的来信页面 ========== -->
+        <div id="mailboxHisPage" class="page">
+            <header class="app-header glass">
+                <button class="icon-btn" id="mailboxHisBackBtn" title="返回">
+                    <svg viewBox="0 0 24 24" class="icon"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <h1 class="header-title">他的来信</h1>
+                <div style="width:40px;"></div>
+            </header>
+            <div class="page-content" id="mailboxHisContent"></div>
+        </div>
+
+        <!-- ========== 我的回信页面 ========== -->
+        <div id="mailboxMinePage" class="page">
+            <header class="app-header glass">
+                <button class="icon-btn" id="mailboxMineBackBtn" title="返回">
+                    <svg viewBox="0 0 24 24" class="icon"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <h1 class="header-title">我的回信</h1>
+                <div style="width:40px;"></div>
+            </header>
+            <div class="page-content" id="mailboxMineContent"></div>
+            <div class="mailbox-sent-bar" id="mailboxMineBar"></div>
+        </div>
+
+        <!-- ========== 回信编辑页面 ========== -->
+        <div id="mailboxReplyWritePage" class="page">
+            <header class="app-header glass">
+                <button class="icon-btn" id="mailboxReplyWriteBackBtn" title="返回">
+                    <svg viewBox="0 0 24 24" class="icon"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <h1 class="header-title" id="mailboxReplyWriteTitle">回信</h1>
+                <div style="width:40px;"></div>
+            </header>
+            <div class="page-content" id="mailboxReplyWriteContent"></div>
+            <div class="mailbox-sent-bar" id="mailboxReplyWriteBar"></div>
+        </div>
+
+        <!-- ========== 占卜入口页面 ========== -->
+        <div id="divinationPage" class="page">
+            <header class="app-header glass">
+                <div class="header-left">
+                    <button class="icon-btn" id="divinationBackBtn" title="返回">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </div>
+                <div class="header-title">占卜</div>
+                <div class="header-right"></div>
+            </header>
+            <div class="page-content" id="divinationContent">
+                <div class="divine-entry-row">
+                    <button class="divine-entry-btn" id="lenormandEntryBtn">
+                        <div class="divine-entry-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="13" height="18" rx="2"/><path d="M7 9h6M7 13h6M7 17h3"/><rect x="8" y="2" width="13" height="18" rx="2" opacity="0.5"/></svg>
+                        </div>
+                        <span>雷诺曼占卜</span>
+                    </button>
+                    <button class="divine-entry-btn" id="tarotEntryBtn">
+                        <div class="divine-entry-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z" opacity="0.6"/></svg>
+                        </div>
+                        <span>塔罗占卜</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 雷诺曼占卜页面 ========== -->
+        <div id="lenormandPage" class="page">
+            <header class="app-header glass">
+                <div class="header-left">
+                    <button class="icon-btn" id="lenormandBackBtn" title="返回">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </div>
+                <div class="header-title">雷诺曼</div>
+                <div class="header-right"></div>
+            </header>
+            <div class="page-content" id="lenormandContent">
+                <div class="lenormand-form" id="lenormandForm">
+                    <div class="len-section">
+                        <div class="len-section-title">
+                            <svg viewBox="0 0 24 24" class="len-section-icon"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                            <span>抽牌数量</span>
+                        </div>
+                        <div class="len-count-row">
+                            <button class="len-count-btn active" data-count="1">
+                                <span class="len-count-num">1</span>
+                                <span class="len-count-label">单张</span>
+                            </button>
+                            <button class="len-count-btn" data-count="3">
+                                <span class="len-count-num">3</span>
+                                <span class="len-count-label">三张</span>
+                            </button>
+                        </div>
+                        <div class="len-count-hint" id="lenormandCountHint">单张牌 · 直达答案</div>
+                    </div>
+                    <div class="len-section">
+                        <div class="len-section-title">
+                            <svg viewBox="0 0 24 24" class="len-section-icon"><path d="M6 2l-2 6v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-2-6H6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M6 2h12M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span>你的提问（可选）</span>
+                        </div>
+                        <div class="len-question-box">
+                            <textarea id="lenormandQuestion" placeholder="将心中的疑问轻声诉说..." rows="3"></textarea>
+                        </div>
+                    </div>
+                    <button class="len-draw-btn" id="lenormandDrawBtn">
+                        <svg viewBox="0 0 24 24" class="len-draw-icon"><path d="M12 2l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-2.9z" fill="currentColor"/></svg>
+                        <span>开始抽牌</span>
+                    </button>
+                </div>
+            </div>
+            <!-- 雷诺曼抽牌结果弹窗 -->
+            <div class="modal-mask" id="lenormandResultModal">
+                <div class="modal glass len-result-modal">
+                    <div class="len-result" id="lenormandResult"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 塔罗占卜页面 ========== -->
+        <div id="tarotPage" class="page">
+            <header class="app-header glass">
+                <div class="header-left">
+                    <button class="icon-btn" id="tarotBackBtn" title="返回">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </div>
+                <div class="header-title">塔罗</div>
+                <div class="header-right"></div>
+            </header>
+            <div class="page-content" id="tarotContent">
+                <div class="lenormand-form" id="tarotForm">
+                    <div class="len-section">
+                        <div class="len-section-title">
+                            <svg viewBox="0 0 24 24" class="len-section-icon"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                            <span>牌阵选择</span>
+                        </div>
+                        <div class="len-count-row">
+                            <button class="len-count-btn tarot-count-btn active" data-count="1">
+                                <span class="len-count-num">1</span>
+                                <span class="len-count-label">单张</span>
+                            </button>
+                            <button class="len-count-btn tarot-count-btn" data-count="3">
+                                <span class="len-count-num">3</span>
+                                <span class="len-count-label">三张</span>
+                            </button>
+                        </div>
+                        <div class="len-count-hint" id="tarotCountHint">单张牌 · 直指当下</div>
+                    </div>
+                    <div class="len-section">
+                        <div class="len-section-title">
+                            <svg viewBox="0 0 24 24" class="len-section-icon"><path d="M6 2l-2 6v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-2-6H6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M6 2h12M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span>你的提问（可选）</span>
+                        </div>
+                        <div class="len-question-box">
+                            <textarea id="tarotQuestion" placeholder="将心中的疑问轻声诉说..." rows="3"></textarea>
+                        </div>
+                    </div>
+                    <button class="len-draw-btn" id="tarotDrawBtn">
+                        <svg viewBox="0 0 24 24" class="len-draw-icon"><path d="M12 2l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-2.9z" fill="currentColor"/></svg>
+                        <span>开始塔罗占卜</span>
+                    </button>
+                </div>
+            </div>
+            <!-- 塔罗抽牌结果弹窗 -->
+            <div class="modal-mask" id="tarotResultModal">
+                <div class="modal glass len-result-modal">
+                    <div class="len-result" id="tarotResult"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 收藏详情页面 ========== -->
+        <div id="favoriteDetailPage" class="page">
+            <header class="app-header glass">
+                <button class="icon-btn" id="favoriteDetailBackBtn" title="返回">
+                    <svg viewBox="0 0 24 24" class="icon"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <h1 class="header-title" id="favoriteDetailTitle">收藏</h1>
+                <div style="width:40px;"></div>
+            </header>
+            <div class="page-content" id="favoriteDetailContent"></div>
+        </div>
+
+        <!-- ========== 全局底栏 ========== -->
+        <nav class="app-bottom-bar glass" id="bottomBar">
+            <button class="icon-btn tab-btn active" id="tabChatBtn" title="聊天">
+                <svg viewBox="0 0 24 24" class="icon"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="icon-btn tab-btn" id="dataManageBtn" title="数据管理">
+                <svg viewBox="0 0 24 24" class="icon"><path d="M21 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7m18 0-9-5-9 5m18 0-9 5-9-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="icon-btn tab-btn" id="tabMomentsBtn" title="发现">
+                <svg viewBox="0 0 24 24" class="icon"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><polygon points="15.5,8.5 13,13 8.5,15.5 11,11" fill="currentColor"/></svg>
+            </button>
+            <button class="icon-btn tab-btn" id="tabProfileBtn" title="我">
+                <svg viewBox="0 0 24 24" class="icon"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </button>
+        </nav>
+
+        <!-- ========== 弹窗：选择新建类型 ========== -->
+        <div class="modal-mask" id="addTypeModal">
+            <div class="modal glass">
+                <div class="modal-header">
+                    <h3>新建</h3>
+                    <button class="icon-btn modal-close" data-close="addTypeModal">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="chat-list">
+                        <div class="chat-item" id="addTypeContact">
+                            <div class="avatar add-type-avatar">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="8" r="3.2"/><path d="M5 19c0-2.8 2.2-5 5-5s5 2.2 5 5"/><path d="M18 9.5v5M15.5 12h5"/></svg>
+                            </div>
+                            <div class="info">
+                                <div class="row1">
+                                    <div class="name">新建联系人</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-item" id="addTypeGroup">
+                            <div class="avatar add-type-avatar">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8.5" r="3"/><path d="M3.5 19c0-2.8 2.5-5 5.5-5s5.5 2.2 5.5 5"/><circle cx="16.5" cy="9" r="2.4"/><path d="M15.8 14.2c2.5.3 4.4 2.3 4.4 4.8"/></svg>
+                            </div>
+                            <div class="info">
+                                <div class="row1">
+                                    <div class="name">新建群聊</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：新建群聊 ========== -->
+        <div class="modal-mask" id="addGroupModal">
+            <div class="modal glass">
+                <div class="modal-header">
+                    <h3>新建群聊</h3>
+                    <button class="icon-btn modal-close" data-close="addGroupModal">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="avatar-uploader">
+                        <div class="avatar-preview" id="newGroupAvatarPreview"></div>
+                        <label class="avatar-upload-btn">
+                            <input type="file" id="newGroupAvatarInput" accept="image/*" hidden>
+                            <span>选择头像</span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>群聊名称</label>
+                        <input type="text" id="newGroupName" placeholder="请输入群聊名称" />
+                    </div>
+                    <div class="form-group">
+                        <label>选择成员（至少 2 人）</label>
+                        <div class="group-member-list" id="groupMemberList"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="addGroupModal">取消</button>
+                    <button class="btn btn-primary" id="confirmAddGroup">完成</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：修改群名称 ========== -->
+        <div class="modal-mask" id="groupNameModal">
+            <div class="modal glass">
+                <div class="modal-header">
+                    <h3>修改群名称</h3>
+                    <button class="icon-btn modal-close" data-close="groupNameModal">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>群名称</label>
+                        <input type="text" id="groupNameInput" placeholder="请输入群名称" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="groupNameModal">取消</button>
+                    <button class="btn btn-primary" id="confirmGroupName">保存</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：邀请新成员 ========== -->
+        <div class="modal-mask" id="groupInviteModal">
+            <div class="modal glass">
+                <div class="modal-header">
+                    <h3>邀请新成员</h3>
+                    <button class="icon-btn modal-close" data-close="groupInviteModal">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>选择要邀请的梦角</label>
+                        <div class="group-member-list" id="groupInviteList"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="groupInviteModal">取消</button>
+                    <button class="btn btn-primary" id="confirmGroupInvite">完成</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：修改我在本群的昵称 ========== -->
+        <div class="modal-mask" id="groupNicknameModal">
+            <div class="modal glass">
+                <div class="modal-header">
+                    <h3>我在本群的昵称</h3>
+                    <button class="icon-btn modal-close" data-close="groupNicknameModal">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>昵称</label>
+                        <input type="text" id="groupNicknameInput" placeholder="请输入我在本群的昵称" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="groupNicknameModal">取消</button>
+                    <button class="btn btn-primary" id="confirmGroupNickname">保存</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：更换群聊背景 ========== -->
+        <div class="modal-mask" id="groupBgModal">
+            <div class="modal glass">
+                <div class="modal-header">
+                    <h3>更换群聊背景</h3>
+                    <button class="icon-btn modal-close" data-close="groupBgModal">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="settings-section">
+                        <h4>选择背景</h4>
+                        <div class="bg-options" id="groupBgOptions"></div>
+                        <label class="btn btn-outline btn-sm full-width">
+                            自定义背景
+                            <input type="file" id="groupCustomBgInput" accept="image/*" hidden>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="groupBgModal">取消</button>
+                    <button class="btn btn-primary" id="saveGroupBgBtn">保存</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：删除群聊天记录确认 ========== -->
+        <div class="modal-mask" id="groupClearChatModal">
+            <div class="modal wc-small-modal" style="background:var(--glass-bg-strong);">
+                <div class="modal-body" style="padding:28px 20px 20px;text-align:center;">
+                    <div style="font-size:15px;color:var(--text);font-weight:500;line-height:1.6;">确定删除该群的聊天记录吗？<br>删除后无法恢复。</div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="groupClearChatModal">取消</button>
+                    <button class="btn btn-primary" id="groupClearChatConfirmBtn" style="background:linear-gradient(135deg,#ff8a93,#f56a75);border-color:transparent;">确认</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：退出群聊确认 ========== -->
+        <div class="modal-mask" id="groupQuitModal">
+            <div class="modal wc-small-modal" style="background:var(--glass-bg-strong);">
+                <div class="modal-body" style="padding:28px 20px 20px;text-align:center;">
+                    <div style="font-size:16px;color:var(--text);font-weight:600;margin-bottom:8px;">确定退出该群聊吗？</div>
+                    <div style="font-size:13px;color:var(--text-light);">退出后将从聊天列表移除该群。</div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="groupQuitModal">取消</button>
+                    <button class="btn btn-primary" id="groupQuitConfirmBtn" style="background:linear-gradient(135deg,#ff8a93,#f56a75);border-color:transparent;">退出</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 群成员操作菜单 (底部上滑) ========== -->
+        <div class="sheet-mask" id="groupMemberSheet">
+            <div class="action-sheet">
+                <button class="sheet-item" id="sheetInviteBtn">邀请新成员</button>
+                <button class="sheet-item sheet-danger" id="sheetRemoveBtn">移除群成员</button>
+                <div class="sheet-gap"></div>
+                <button class="sheet-item" id="sheetCancelBtn">取消</button>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：新建联系人 ========== -->
+        <div class="modal-mask" id="addContactModal">
+            <div class="modal glass">
+                <div class="modal-header">
+                    <h3>新建联系人</h3>
+                    <button class="icon-btn modal-close" data-close="addContactModal">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="avatar-uploader">
+                        <div class="avatar-preview" id="newAvatarPreview"></div>
+                        <label class="avatar-upload-btn">
+                            <input type="file" id="newAvatarInput" accept="image/*" hidden>
+                            <span>选择头像</span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>昵称</label>
+                        <input type="text" id="newNickname" placeholder="请输入梦角昵称" />
+                    </div>
+                    <div class="form-group">
+                        <label>个性签名</label>
+                        <textarea id="newSignature" placeholder="这位梦角的一句话介绍..." rows="2"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="addContactModal">取消</button>
+                    <button class="btn btn-primary" id="confirmAddContact">创建</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：选择收信人 ========== -->
+        <div class="modal-mask" id="mailboxRecipientModal">
+            <div class="modal glass">
+                <div class="modal-header">
+                    <h3>选择收信人</h3>
+                    <button class="icon-btn modal-close" data-close="mailboxRecipientModal">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="mailboxRecipientList"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：选择回信来源（他的来信） ========== -->
+        <div class="modal-mask" id="mailboxReplySelectModal">
+            <div class="modal glass">
+                <div class="modal-header">
+                    <h3>选择想回复的来信</h3>
+                    <button class="icon-btn modal-close" data-close="mailboxReplySelectModal">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="mailboxReplySelectList"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：聊天设置 ========== -->
+        <div class="modal-mask" id="chatSettingModal">
+            <div class="modal glass">
+                <div class="modal-header">
+                    <h3>聊天设置</h3>
+                    <button class="icon-btn modal-close" data-close="chatSettingModal">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="settings-card-grid">
+                        <div class="settings-card" data-open="wordcard">
+                            <div class="settings-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                            </div>
+                            <div class="settings-card-label">字卡管理</div>
+                        </div>
+                        <div class="settings-card" data-open="bg">
+                            <div class="settings-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                            </div>
+                            <div class="settings-card-label">美化设置</div>
+                        </div>
+                        <div class="settings-card" data-open="reply">
+                            <div class="settings-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                            </div>
+                            <div class="settings-card-label">回复设置</div>
+                        </div>
+                        <div class="settings-card" data-open="contact">
+                            <div class="settings-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            </div>
+                            <div class="settings-card-label">联系人信息</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" id="deleteContactBtn">删除联系人</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：聊天背景 ========== -->
+        <div class="modal-mask" id="chatBgModal">
+            <div class="modal glass">
+                <div class="modal-header">
+                    <h3>美化设置</h3>
+                    <button class="icon-btn modal-close" data-close="chatBgModal">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="settings-section">
+                        <h4>选择背景</h4>
+                        <div class="bg-options" id="bgOptions"></div>
+                        <label class="btn btn-outline btn-sm full-width">
+                            自定义背景
+                            <input type="file" id="customBgInput" accept="image/*" hidden>
+                        </label>
+                    </div>
+                    <div class="settings-section">
+                        <h4>气泡样式</h4>
+                        <div class="bubble-style-grid">
+                            <!-- 我的气泡 -->
+                            <div class="bubble-style-col" data-target="sent">
+                                <div class="bubble-style-title">我的气泡</div>
+                                <div class="bubble-style-row">
+                                    <span class="bubble-style-label">颜色</span>
+                                    <div class="bubble-color-options" id="sentColorOptions"></div>
+                                    <label class="bubble-color-picker">
+                                        <input type="color" id="sentColorPicker" value="#ffb6bd">
+                                    </label>
+                                </div>
+                                <div class="bubble-style-row">
+                                    <span class="bubble-style-label">形状</span>
+                                    <div class="bubble-shape-options" id="sentShapeOptions"></div>
+                                </div>
+                                <div class="bubble-style-row">
+                                    <span class="bubble-style-label">效果</span>
+                                    <div class="bubble-effect-options" id="sentEffectOptions"></div>
+                                </div>
+                            </div>
+                            <!-- 梦角气泡 -->
+                            <div class="bubble-style-col" data-target="received">
+                                <div class="bubble-style-title">梦角气泡</div>
+                                <div class="bubble-style-row">
+                                    <span class="bubble-style-label">颜色</span>
+                                    <div class="bubble-color-options" id="receivedColorOptions"></div>
+                                    <label class="bubble-color-picker">
+                                        <input type="color" id="receivedColorPicker" value="#ffffff">
+                                    </label>
+                                </div>
+                                <div class="bubble-style-row">
+                                    <span class="bubble-style-label">形状</span>
+                                    <div class="bubble-shape-options" id="receivedShapeOptions"></div>
+                                </div>
+                                <div class="bubble-style-row">
+                                    <span class="bubble-style-label">效果</span>
+                                    <div class="bubble-effect-options" id="receivedEffectOptions"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" id="saveBgBtn">保存</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：回复设置 ========== -->
+        <div class="modal-mask" id="replySettingModal">
+            <div class="modal glass">
+                <div class="modal-header">
+                    <h3>回复设置</h3>
+                    <button class="icon-btn modal-close" data-close="replySettingModal">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="settings-section">
+                        <div class="form-row">
+                            <div class="form-item">
+                                <label>最短回复(秒)</label>
+                                <input type="number" id="replyMin" min="0" value="3" />
+                            </div>
+                            <div class="form-item">
+                                <label>最长回复(秒)</label>
+                                <input type="number" id="replyMax" min="0" value="10" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label class="switch">
+                                <input type="checkbox" id="autoSendSwitch">
+                                <span class="slider"></span>
+                                <span class="switch-label">主动发送消息</span>
+                            </label>
+                        </div>
+                        <div class="form-item" id="autoIntervalWrap">
+                            <label>主动消息间隔(分钟)</label>
+                            <input type="number" id="autoInterval" min="1" value="60" />
+                        </div>
+                        <div class="form-row">
+                            <label class="switch">
+                                <input type="checkbox" id="mixedModeSwitch">
+                                <span class="slider"></span>
+                                <span class="switch-label">混合模式（Emoji拼入字卡文字）</span>
+                            </label>
+                        </div>
+                        <div class="form-row">
+                            <label class="switch">
+                                <input type="checkbox" id="soundEnabledSwitch">
+                                <span class="slider"></span>
+                                <span class="switch-label">消息音效</span>
+                            </label>
+                        </div>
+                        <div class="form-item" id="soundOptionsWrap" style="display:none;">
+                            <label>用户发送消息音效</label>
+                            <select id="userMsgSoundSelect"></select>
+                            <br>
+                            <label style="margin-top:8px;">梦角发送消息音效</label>
+                            <select id="otherMsgSoundSelect"></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" id="saveReplyBtn">保存</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：联系人信息 ========== -->
+        <div class="modal-mask" id="contactInfoModal">
+            <div class="modal glass">
+                <div class="modal-header">
+                    <h3>联系人信息</h3>
+                    <button class="icon-btn modal-close" data-close="contactInfoModal">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="settings-section">
+                        <div class="form-group">
+                            <label>昵称</label>
+                            <input type="text" id="editNickname" />
+                        </div>
+                        <div class="form-group">
+                            <label>个性签名</label>
+                            <textarea id="editSignature" rows="2"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>头像</label>
+                            <div class="avatar-uploader small">
+                                <div class="avatar-preview" id="editAvatarPreview"></div>
+                                <label class="avatar-upload-btn btn-sm">
+                                    <input type="file" id="editAvatarInput" accept="image/*" hidden>
+                                    <span>更换头像</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" id="saveContactBtn">保存</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：编辑个人资料 ========== -->
+        <div class="modal-mask" id="meProfileModal">
+            <div class="modal glass">
+                <div class="modal-header">
+                    <h3>个人资料</h3>
+                    <button class="icon-btn modal-close" data-close="meProfileModal">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="settings-section">
+                        <div class="form-group">
+                            <label>昵称</label>
+                            <input type="text" id="meNickname" />
+                        </div>
+                        <div class="form-group">
+                            <label>个性签名</label>
+                            <textarea id="meSignature" rows="2"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>头像</label>
+                            <div class="avatar-uploader small">
+                                <div class="avatar-preview" id="meAvatarPreview"></div>
+                                <label class="avatar-upload-btn btn-sm">
+                                    <input type="file" id="meAvatarInput" accept="image/*" hidden>
+                                    <span>更换头像</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" id="saveMeBtn">保存</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：数据管理 ========== -->
+        <div class="modal-mask" id="dataManageModal">
+            <div class="modal glass">
+                <div class="modal-header">
+                    <h3>数据管理</h3>
+                    <button class="icon-btn modal-close" data-close="dataManageModal">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="settings-section">
+                        <h4>导出数据</h4>
+                        <p class="hint">将所有联系人、聊天记录和设置导出为 ZIP 备份文件（媒体以原始格式打包，体积更小）。</p>
+                        <button class="btn btn-outline full-width" id="exportDataBtn">导出备份</button>
+                    </div>
+                    <div class="settings-section">
+                        <h4>导入数据</h4>
+                        <p class="hint">选择之前导出的备份文件恢复数据（支持 ZIP 与旧版 JSON，将覆盖现有数据）。</p>
+                        <label class="btn btn-outline full-width">
+                            选择备份文件导入
+                            <input type="file" id="importDataInput" accept=".zip,.json,application/zip,application/json" hidden>
+                        </label>
+                    </div>
+                    <div class="settings-section">
+                        <h4>清空聊天记录</h4>
+                        <p class="hint">选择联系人，清空其聊天记录（保留联系人资料与设置）。</p>
+                        <button class="btn btn-outline full-width" id="clearChatBtn">清空聊天记录</button>
+                    </div>
+                    <div class="settings-section">
+                        <h4>重置数据</h4>
+                        <p class="hint">清空所有联系人、聊天记录和设置，此操作不可撤销。</p>
+                        <button class="btn btn-danger full-width" id="resetDataBtn">重置数据</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="dataManageModal">关闭</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：字卡编辑 ========== -->
+        <div class="modal-mask modal-mask-top" id="wordcardModal">
+            <div class="modal glass wc-add-modal">
+                <div class="wc-add-header">
+                    <h3 id="wordcardModalTitle">批量添加回复</h3>
+                    <p class="wc-add-subtitle">每行一条，自动去重</p>
+                    <button class="icon-btn modal-close" data-close="wordcardModal" style="position:absolute;top:14px;right:14px;">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+                <div class="wc-add-body">
+                    <!-- 回复内容 (多行, 按换行拆分, 每行一条字卡) -->
+                    <div class="form-group wc-add-formgroup" id="wcReplyGroup">
+                        <label>回复内容</label>
+                        <textarea id="wordcardReply" class="wc-add-textarea" placeholder="在此粘贴回复内容，每行一条…" rows="8"></textarea>
+                        <div class="wc-add-counter"><b id="wcReplyCount">0</b> 条</div>
+                    </div>
+                    <!-- 语音条文件选择 (仅 voice tab 显示) -->
+                    <div class="form-group wc-add-formgroup" id="wcVoiceFileGroup" hidden>
+                        <label>语音条音频</label>
+                        <div class="wc-voice-file-picker">
+                            <button type="button" class="wc-voice-file-btn" id="wcVoiceFileBtn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                                <span>选择 MP3 文件</span>
+                            </button>
+                            <input type="file" id="wcVoiceFileInput" accept="audio/mpeg,.mp3" multiple hidden>
+                        </div>
+                        <div class="wc-voice-file-list" id="wcVoiceFileList"></div>
+                    </div>
+                    <!-- 分组选择 (按钮 + 下拉面板) -->
+                    <div class="wc-group-picker">
+                        <button type="button" class="wc-group-picker-btn" id="wcGroupPickerBtn">
+                            <svg class="wc-group-picker-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M10 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-8l-2-2z"/></svg>
+                            <span id="wcGroupPickerLabel">添加到分组</span>
+                            <svg class="wc-group-picker-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="wc-group-picker-panel" id="wcGroupPickerPanel" hidden>
+                            <!-- JS 渲染: 不分组 + 各分组标签 -->
+                        </div>
+                    </div>
+                </div>
+                <div class="wc-add-footer">
+                    <button class="btn btn-ghost" data-close="wordcardModal">取消</button>
+                    <button class="btn wc-add-submit" id="saveWordcardBtn">添加</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：字卡分组管理 ========== -->
+        <div class="modal-mask modal-mask-top" id="wcGroupModal">
+            <div class="modal glass">
+                <div class="modal-header">
+                    <div style="display:flex;align-items:center;gap:8px;">
+                        <svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:none;stroke:var(--primary-deep);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                        <h3>分组管理</h3>
+                    </div>
+                    <button class="icon-btn modal-close" data-close="wcGroupModal">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="wc-group-list-editor" id="wcGroupListEditor">
+                        <!-- JS 渲染已有分组卡片 / 空状态 -->
+                    </div>
+                </div>
+                <div class="modal-footer" style="justify-content:center;">
+                    <button class="wc-new-group-btn" id="wcNewGroupBtn">
+                        <span style="font-size:18px;line-height:1;">+</span> 新建分组
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：新建/编辑分组 ========== -->
+        <div class="modal-mask modal-mask-top" id="wcCreateGroupModal">
+            <div class="modal glass">
+                <div class="modal-header">
+                    <h3 id="wcCreateGroupTitle">新建分组</h3>
+                    <button class="icon-btn modal-close" data-close="wcCreateGroupModal">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="wc-create-group-form">
+                        <div class="wc-form-label">LABEL</div>
+                        <input type="text" id="wcGroupNameInput" class="form-control" placeholder="分组名称...">
+                        <div class="wc-form-label">COLOR PRESET</div>
+                        <div class="wc-color-picker" id="wcColorPicker">
+                            <!-- JS 渲染 8 颗色点 -->
+                        </div>
+                        <div class="wc-form-label">CUSTOM COLOR</div>
+                        <div class="wc-custom-color-row">
+                            <div class="wc-custom-swatch" id="wcCustomSwatch" title="点击选择颜色"></div>
+                            <input type="text" id="wcCustomColorInput" class="form-control" placeholder="#DA77F2" maxlength="7">
+                            <button class="wc-preview-btn" id="wcPreviewColorBtn">预览</button>
+                        </div>
+                        <!-- 自定义颜色选择器 (色块下方弹出) -->
+                        <div class="wc-color-picker-panel" id="wcColorPickerPanel" hidden>
+                            <div class="wc-sv-square" id="wcSvSquare">
+                                <div class="wc-sv-cursor" id="wcSvCursor"></div>
+                            </div>
+                            <div class="wc-hue-row">
+                                <input type="range" class="wc-hue-slider" id="wcHueSlider" min="0" max="360" value="0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="wcCreateGroupModal">取消</button>
+                    <button class="btn btn-primary" id="wcSaveGroupBtn">保存</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 字卡: 选择分组弹窗 ========== -->
+        <div class="modal-mask" id="wcCardGroupModal">
+            <div class="modal wc-small-modal">
+                <div class="modal-header"><div class="modal-title" id="wcCardGroupTitle">选择分组</div></div>
+                <div class="modal-body">
+                    <div class="wc-card-group-subtitle" id="wcCardGroupSubtitle" style="display:none;"></div>
+                    <div class="wc-group-select-list" id="wcCardGroupList">
+                        <!-- JS 渲染: 不分组 + 各分组 -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="wcCardGroupModal">取消</button>
+                    <button class="btn btn-primary" id="wcCardGroupConfirmBtn">确认</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 字卡: 编辑弹窗 ========== -->
+        <div class="modal-mask" id="wcCardEditModal">
+            <div class="modal wc-small-modal">
+                <div class="modal-header"><div class="modal-title">修改内容</div></div>
+                <div class="modal-body">
+                    <textarea id="wcCardEditText" class="form-control" rows="3" placeholder="输入字卡内容..."></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="wcCardEditModal">取消</button>
+                    <button class="btn btn-primary" id="wcCardEditSaveBtn">确定</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== Emoji: 新增弹窗 ========== -->
+        <div class="modal-mask" id="wcEmojiAddModal">
+            <div class="modal wc-small-modal">
+                <div class="modal-body" style="padding:24px 20px 16px;">
+                    <div style="font-size:15px;color:var(--text);font-weight:500;margin-bottom:12px;">请输入要添加的 Emoji（支持组合表情）：</div>
+                    <input type="text" id="wcEmojiInput" class="form-control" placeholder="粘贴或输入 emoji / 颜文字" />
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="wcEmojiAddModal">取消</button>
+                    <button class="btn wc-emoji-confirm-btn" id="wcEmojiAddConfirmBtn">确定</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 通用表情添加弹窗 ========== -->
+        <div class="modal-mask" id="commonEmojiAddModal">
+            <div class="modal wc-small-modal">
+                <div class="modal-body" style="padding:24px 20px 16px;">
+                    <div style="font-size:15px;color:var(--text);font-weight:500;margin-bottom:12px;">请输入要添加的 Emoji（支持组合表情 / 颜文字）：</div>
+                    <input type="text" id="commonEmojiInput" class="form-control" placeholder="粘贴或输入 emoji / 颜文字" />
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="commonEmojiAddModal">取消</button>
+                    <button class="btn wc-emoji-confirm-btn" id="commonEmojiAddConfirmBtn">确定</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 表情库: 图片裁剪弹窗 ========== -->
+        <div class="modal-mask" id="wcStickerCropModal">
+            <div class="modal wc-crop-modal">
+                <div class="modal-header"><div class="modal-title">裁剪表情</div></div>
+                <div class="modal-body" style="padding:16px 20px;">
+                    <div class="wc-crop-area" id="wcCropArea">
+                        <img id="wcCropImg" alt="" />
+                        <div class="wc-crop-box" id="wcCropBox">
+                            <div class="wc-crop-handle wc-crop-handle-nw"></div>
+                            <div class="wc-crop-handle wc-crop-handle-ne"></div>
+                            <div class="wc-crop-handle wc-crop-handle-sw"></div>
+                            <div class="wc-crop-handle wc-crop-handle-se"></div>
+                        </div>
+                    </div>
+                    <div style="font-size:12px;color:var(--text-light);margin-top:10px;text-align:center;">拖动框选区域，拖动四角可调整大小</div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="wcStickerCropModal">取消</button>
+                    <button class="btn btn-primary" id="wcCropConfirmBtn">确认</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 表情库: 删除确认弹窗 ========== -->
+        <div class="modal-mask" id="wcStickerDelModal">
+            <div class="modal wc-small-modal">
+                <div class="modal-body" style="padding:28px 20px 20px;text-align:center;">
+                    <div style="font-size:16px;color:var(--text);font-weight:500;">确定删除该表情吗？</div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="wcStickerDelModal">取消</button>
+                    <button class="btn btn-primary" id="wcStickerDelConfirmBtn" style="background:#ff4d4f;border-color:#ff4d4f;">删除</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 字卡: 导出方式弹窗 ========== -->
+        <div class="modal-mask" id="wcExportModeModal">
+            <div class="modal wc-small-modal">
+                <div class="modal-body" style="padding:20px;">
+                    <div style="font-size:17px;font-weight:600;color:var(--text);margin-bottom:4px;">导出方式</div>
+                    <div style="font-size:13px;color:var(--text-light);margin-bottom:16px;">请选择导出模式</div>
+                    <div class="wc-export-option" data-export-mode="full">
+                        <div class="wc-export-option-icon" style="background:#fff1f0;">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#ff6a6a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M17 8l-5-5-5 5"/><path d="M12 3v12"/></svg>
+                        </div>
+                        <div class="wc-export-option-text">
+                            <div class="wc-export-option-title">全量导出</div>
+                            <div class="wc-export-option-desc">自由选择要导出的模块</div>
+                        </div>
+                    </div>
+                    <div class="wc-export-option" data-export-mode="group">
+                        <div class="wc-export-option-icon" style="background:#fff4e6;">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#fa8c16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                        </div>
+                        <div class="wc-export-option-text">
+                            <div class="wc-export-option-title">按分组导出</div>
+                            <div class="wc-export-option-desc">仅导出指定分组的字卡内容</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline full-width" data-close="wcExportModeModal">取消</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 字卡: 全量导出弹窗 ========== -->
+        <div class="modal-mask" id="wcFullExportModal">
+            <div class="modal">
+                <div class="modal-header">
+                    <div>
+                        <div class="modal-title">导出字卡</div>
+                        <div style="font-size:12px;color:var(--text-light);margin-top:2px;">选择要导出的模块</div>
+                    </div>
+                    <button class="icon-btn modal-close" data-close="wcFullExportModal">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="wc-module-list" id="wcFullExportList"></div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline" data-close="wcFullExportModal">取消</button>
+                    <button class="btn btn-primary" id="wcFullExportConfirmBtn">确认</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 字卡: 按分组导出弹窗 ========== -->
+        <div class="modal-mask" id="wcGroupExportModal">
+            <div class="modal">
+                <div class="modal-header">
+                    <div>
+                        <div class="modal-title">选择分组导出</div>
+                        <div style="font-size:12px;color:var(--text-light);margin-top:2px;">勾选要导出的分组，仅导出这些分组的字卡</div>
+                    </div>
+                    <button class="icon-btn modal-close" data-close="wcGroupExportModal">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="wc-group-export-list" id="wcGroupExportList"></div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline" data-close="wcGroupExportModal">取消</button>
+                    <button class="btn btn-primary" id="wcGroupExportConfirmBtn">导出</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 字卡: 导入弹窗 ========== -->
+        <div class="modal-mask" id="wcImportModal">
+            <div class="modal">
+                <div class="modal-header">
+                    <div>
+                        <div class="modal-title">导入字卡</div>
+                        <div style="font-size:12px;color:var(--text-light);margin-top:2px;" id="wcImportSubtitle">文件中包含 0 个模块</div>
+                    </div>
+                    <button class="icon-btn modal-close" data-close="wcImportModal">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="wc-module-list" id="wcImportList"></div>
+                    <div class="wc-import-mode-row">
+                        <span class="wc-import-mode-label">导入方式</span>
+                        <label class="wc-import-radio">
+                            <input type="radio" name="wcImportMode" value="append" checked>
+                            <span class="wc-import-radio-dot"></span>
+                            <span>追加</span>
+                        </label>
+                        <label class="wc-import-radio">
+                            <input type="radio" name="wcImportMode" value="overwrite">
+                            <span class="wc-import-radio-dot"></span>
+                            <span>覆盖</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline" data-close="wcImportModal">取消</button>
+                    <button class="btn btn-primary" id="wcImportConfirmBtn">确认</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 字卡导入文件选择 -->
+        <input type="file" id="wcImportFileInput" accept=".json,application/json" hidden>
+
+        <!-- ========== 字卡: 删除确认弹窗 ========== -->
+        <div class="modal-mask" id="wcCardDelModal">
+            <div class="modal wc-small-modal">
+                <div class="modal-body" style="padding:28px 20px 20px;text-align:center;">
+                    <div style="font-size:16px;color:var(--text);font-weight:500;">确定删除吗?</div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="wcCardDelModal">取消</button>
+                    <button class="btn btn-primary" id="wcCardDelConfirmBtn" style="background:linear-gradient(135deg,#ff8a93,#f56a75);border-color:transparent;">确定</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 重置数据确认弹窗 ========== -->
+        <div class="modal-mask" id="resetDataConfirmModal">
+            <div class="modal wc-small-modal" style="background:var(--glass-bg-strong);">
+                <div class="modal-body" style="padding:28px 20px 20px;text-align:center;">
+                    <div style="font-size:16px;color:var(--text);font-weight:600;margin-bottom:8px;">确定重置数据？</div>
+                    <div style="font-size:13px;color:var(--text-light);">清空所有，不可撤销。</div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="resetDataConfirmModal">取消</button>
+                    <button class="btn btn-primary" id="resetDataConfirmBtn" style="background:linear-gradient(135deg,#ff8a93,#f56a75);border-color:transparent;">确认重置</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：导入数据确认 ========== -->
+        <div class="modal-mask" id="importDataConfirmModal">
+            <div class="modal wc-small-modal" style="background:var(--glass-bg-strong);">
+                <div class="modal-body" style="padding:28px 20px 20px;text-align:center;">
+                    <div style="font-size:16px;color:var(--text);font-weight:600;margin-bottom:8px;">确认导入数据？</div>
+                    <div style="font-size:13px;color:var(--text-light);">导入将覆盖现有所有数据，此操作不可撤销。</div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="importDataConfirmModal">取消</button>
+                    <button class="btn btn-primary" id="importDataConfirmBtn">确认导入</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：选择联系人清空聊天记录 ========== -->
+        <div class="modal-mask" id="clearChatModal">
+            <div class="modal glass">
+                <div class="modal-header">
+                    <div>
+                        <div class="modal-title">清空聊天记录</div>
+                        <div style="font-size:12px;color:var(--text-light);margin-top:2px;">选择要清空聊天记录的联系人</div>
+                    </div>
+                    <button class="icon-btn modal-close" data-close="clearChatModal">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="wc-group-export-list" id="clearChatContactList"></div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline" data-close="clearChatModal">取消</button>
+                    <button class="btn btn-primary" id="clearChatNextBtn">确定</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：确认清空聊天记录 ========== -->
+        <div class="modal-mask" id="clearChatConfirmModal">
+            <div class="modal wc-small-modal" style="background:var(--glass-bg-strong);">
+                <div class="modal-body" style="padding:28px 20px 20px;text-align:center;">
+                    <div id="clearChatConfirmText" style="font-size:15px;color:var(--text);font-weight:500;line-height:1.6;"></div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="clearChatConfirmModal">取消</button>
+                    <button class="btn btn-primary" id="clearChatConfirmBtn" style="background:linear-gradient(135deg,#ff8a93,#f56a75);border-color:transparent;">确认</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 删除联系人确认弹窗 ========== -->
+        <div class="modal-mask" id="delContactModal">
+            <div class="modal wc-small-modal">
+                <div class="modal-body" style="padding:28px 20px 20px;text-align:center;">
+                    <div style="font-size:16px;color:var(--text);font-weight:600;margin-bottom:8px;">确定删除联系人？</div>
+                    <div style="font-size:13px;color:var(--text-light);" id="delContactHint">删除后所有聊天记录将一并删除且无法恢复。</div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="delContactModal">取消</button>
+                    <button class="btn btn-primary" id="delContactConfirmBtn" style="background:linear-gradient(135deg,#ff8a93,#f56a75);border-color:transparent;">删除</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 头像裁剪弹窗 ========== -->
+        <div class="modal-mask" id="avatarCropModal">
+            <div class="modal wc-crop-modal">
+                <div class="modal-header"><div class="modal-title">裁剪头像</div></div>
+                <div class="modal-body" style="padding:16px 20px;">
+                    <div class="wc-crop-area" id="avatarCropArea">
+                        <img id="avatarCropImg" alt="" />
+                        <div class="wc-crop-box" id="avatarCropBox">
+                            <div class="wc-crop-handle wc-crop-handle-nw"></div>
+                            <div class="wc-crop-handle wc-crop-handle-ne"></div>
+                            <div class="wc-crop-handle wc-crop-handle-sw"></div>
+                            <div class="wc-crop-handle wc-crop-handle-se"></div>
+                        </div>
+                    </div>
+                    <div style="font-size:12px;color:var(--text-light);margin-top:10px;text-align:center;">拖动框选区域，拖动四角可调整大小</div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="avatarCropModal">取消</button>
+                    <button class="btn btn-primary" id="avatarCropConfirmBtn">确认</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 新消息通知 Toast ========== -->
+        <div id="toastContainer" class="toast-container"></div>
+
+        <!-- ========== 字卡管理独立页面 ========== -->
+        <div class="modal-mask" id="wordcardPageMask">
+            <div class="page-modal glass" id="wordcardPage">
+                <!-- 顶部一级导航: 回复库 / 互动 -->
+                <nav class="wc-top-tabs" id="wcTopTabs">
+                    <button class="wc-top-tab active" data-top-tab="reply">
+                        <svg viewBox="0 0 24 24" class="wc-top-tab-icon"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        回复库
+                    </button>
+                    <button class="wc-top-tab" data-top-tab="interaction">
+                        <svg viewBox="0 0 24 24" class="wc-top-tab-icon"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        互动
+                    </button>
+                </nav>
+
+                <!-- 回复库内容区 -->
+                <div id="wcReplyContent">
+                    <header class="wc-header">
+                        <div class="wc-title">回复库管理</div>
+                    </header>
+
+                    <div class="wc-body">
+                        <!-- 子 Tab: 主字卡 / Emoji / 表情库 -->
+                        <div class="wc-tabs wc-sub-tabs">
+                            <button class="wc-tab active" data-sub-tab="main">主字卡</button>
+                            <button class="wc-tab" data-sub-tab="group">群聊字卡</button>
+                            <button class="wc-tab" data-sub-tab="emoji">Emoji</button>
+                            <button class="wc-tab" data-sub-tab="sticker">表情库</button>
+                            <button class="wc-tab" data-sub-tab="momentImage">图片</button>
+                        </div>
+
+                        <!-- 工具栏: 搜索 / 导入 / 筛选 / 视图 / 导出 / 排序 -->
+                        <div class="wc-toolbar" id="wcToolbar">
+                            <div class="wc-toolbar-left">
+                                <button class="wc-tool-btn" id="wcSearchBtn" title="搜索">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                                </button>
+                                <button class="wc-tool-btn" id="wcGroupManageBtn" title="分组管理">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                                </button>
+                                <button class="wc-tool-btn" id="wcSortBtn" title="一键去重">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M6 12h12M10 18h4"/></svg>
+                                </button>
+                            </div>
+                            <div class="wc-toolbar-right">
+                                <button class="wc-tool-btn" id="wcViewBtn" title="批量管理">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                                </button>
+                                <button class="wc-tool-btn" id="wcImportBtn" title="导入">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M17 10l-5 5-5-5"/><path d="M12 3v12"/></svg>
+                                </button>
+                                <button class="wc-tool-btn" id="wcExportBtn" title="导出">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 搜索框 (默认隐藏, 点击搜索图标后显示) -->
+                        <div class="wc-search-bar" id="wcSearchBar" hidden>
+                            <svg class="wc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                            <input type="text" id="wcSearchInput" class="wc-search-input" placeholder="搜索内容" />
+                            <button class="wc-search-close" id="wcSearchCloseBtn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+                            </button>
+                        </div>
+
+                        <!-- 分组筛选 chips 行 -->
+                        <div class="wc-chips-row" id="wcChipsRow"></div>
+
+                        <!-- 批量管理操作栏 (默认隐藏) -->
+                        <div class="wc-batch-bar" id="wcBatchBar" hidden>
+                            <div class="wc-batch-row">
+                                <button class="wc-batch-btn wc-batch-selectall" id="wcBatchSelectAll">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                    全选 (<span id="wcBatchCount">0</span>)
+                                </button>
+                                <span class="wc-batch-hint">点击字卡以选择</span>
+                                <div class="wc-batch-actions">
+                                    <button class="wc-batch-action" id="wcBatchGroup" title="分组">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                                        分组
+                                    </button>
+                                    <button class="wc-batch-action" id="wcBatchBlock" title="屏蔽">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                                        屏蔽
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="wc-batch-del" id="wcBatchDelete">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-2 14H7L5 6M10 11v6M14 11v6M9 6V4h6v2"/></svg>
+                                删除
+                            </button>
+                        </div>
+
+                        <!-- 主字卡内容区 -->
+                        <div id="wcMainContent">
+                            <div class="wc-group-list" id="wcGroupList"></div>
+                        </div>
+
+                        <!-- Emoji / 表情库 空状态 -->
+                        <div class="wc-emoji-section" id="wcEmojiSection" hidden>
+                            <div class="wc-section-divider wc-divider-left"><span>— 自定义 —</span></div>
+                            <div class="wc-emoji-grid" id="wcEmojiGrid"></div>
+                            <div class="wc-empty-state" id="wcEmojiEmpty" hidden>
+                                <svg viewBox="0 0 24 24" style="width:56px;height:56px;"><circle cx="12" cy="12" r="10" fill="none" stroke="var(--primary)" stroke-width="2"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"/></svg>
+                                <div class="wc-empty-state-title">暂无 Emoji</div>
+                                <div class="wc-empty-state-desc">点击下方「+ 新增」添加第一个表情</div>
+                            </div>
+                        </div>
+                        <!-- 表情库 内容区 -->
+                        <div class="wc-sticker-section" id="wcStickerSection" hidden>
+                            <div class="wc-sticker-grid" id="wcStickerGrid"></div>
+                            <div class="wc-empty-state" id="wcStickerEmpty" hidden>
+                                <svg viewBox="0 0 24 24" style="width:56px;height:56px;"><rect x="3" y="3" width="18" height="18" rx="4" fill="none" stroke="var(--primary)" stroke-width="2"/><circle cx="9" cy="9" r="1.5" fill="var(--primary)"/><circle cx="15" cy="9" r="1.5" fill="var(--primary)"/><path d="M8 14c1 1.5 2.5 2 4 2s3-.5 4-2" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"/></svg>
+                                <div class="wc-empty-state-title">暂无表情</div>
+                                <div class="wc-empty-state-desc">点击下方「+ 新增」导入第一张表情</div>
+                            </div>
+                            <input type="file" id="wcStickerFileInput" accept="image/*" hidden>
+                            <input type="file" id="exclusiveEmojiFileInput" accept="image/*" hidden>
+                        </div>
+                        <!-- 图片 内容区 -->
+                        <div class="wc-sticker-section" id="wcMomentImageSection" hidden>
+                            <div class="wc-sticker-grid" id="wcMomentImageGrid"></div>
+                            <div class="wc-empty-state" id="wcMomentImageEmpty" hidden>
+                                <svg viewBox="0 0 24 24" style="width:56px;height:56px;"><rect x="3" y="3" width="18" height="18" rx="4" fill="none" stroke="var(--primary)" stroke-width="2"/><circle cx="8.5" cy="8.5" r="1.5" fill="var(--primary)"/><path d="M21 15l-5-5L5 21" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <div class="wc-empty-state-title">暂无图片</div>
+                                <div class="wc-empty-state-desc">点击下方「+ 新增」导入第一张图片</div>
+                            </div>
+                            <input type="file" id="wcMomentImageFileInput" accept="image/*" multiple hidden>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 互动内容区 -->
+                <div id="wcInteractionContent" hidden>
+                    <header class="wc-header">
+                        <div class="wc-title">互动配置</div>
+                    </header>
+                    <div class="wc-body">
+                        <!-- 互动子 Tab: 拍一拍 / 语音条 / 对方状态 -->
+                        <div class="wc-tabs wc-sub-tabs">
+                            <button class="wc-tab active" data-interaction-tab="pat">拍一拍</button>
+                            <button class="wc-tab" data-interaction-tab="voice">语音条</button>
+                            <button class="wc-tab" data-interaction-tab="confession">告白</button>
+                            <button class="wc-tab" data-interaction-tab="status">对方状态</button>
+                        </div>
+
+                        <!-- 拍一拍内容区 -->
+                        <div id="wcPatContent">
+                            <div class="wc-toolbar">
+                                <div class="wc-toolbar-left">
+                                    <button class="wc-tool-btn" data-action="pat-search" title="搜索">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                                    </button>
+                                    <button class="wc-tool-btn" data-action="pat-group" title="分组管理">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                                    </button>
+                                    <button class="wc-tool-btn" data-action="pat-sort" title="一键去重">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M6 12h12M10 18h4"/></svg>
+                                    </button>
+                                </div>
+                                <div class="wc-toolbar-right">
+                                    <button class="wc-tool-btn" data-action="pat-import" title="导入">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M17 10l-5 5-5-5"/><path d="M12 3v12"/></svg>
+                                    </button>
+                                    <button class="wc-tool-btn" data-action="pat-export" title="导出">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="wc-search-bar" id="wcPatSearchBar" hidden>
+                                <svg class="wc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                                <input type="text" id="wcPatSearchInput" class="wc-search-input" placeholder="搜索内容" />
+                                <button class="wc-search-close" data-action="pat-search-close">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+                                </button>
+                            </div>
+                            <div class="wc-chips-row" id="wcPatChipsRow"></div>
+                            <div class="wc-group-list" id="wcPatGroupList"></div>
+                        </div>
+
+                        <!-- 语音条内容区 -->
+                        <div id="wcVoiceContent" hidden>
+                            <div class="wc-toolbar">
+                                <div class="wc-toolbar-left">
+                                    <button class="wc-tool-btn" data-action="voice-search" title="搜索">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                                    </button>
+                                    <button class="wc-tool-btn" data-action="voice-group" title="分组管理">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                                    </button>
+                                    <button class="wc-tool-btn" data-action="voice-sort" title="一键去重">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M6 12h12M10 18h4"/></svg>
+                                    </button>
+                                </div>
+                                <div class="wc-toolbar-right">
+                                    <button class="wc-tool-btn" data-action="voice-batch" title="批量管理">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                                    </button>
+                                    <button class="wc-tool-btn" data-action="voice-import" title="导入">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M17 10l-5 5-5-5"/><path d="M12 3v12"/></svg>
+                                    </button>
+                                    <button class="wc-tool-btn" data-action="voice-export" title="导出">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="wc-search-bar" id="wcVoiceSearchBar" hidden>
+                                <svg class="wc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                                <input type="text" id="wcVoiceSearchInput" class="wc-search-input" placeholder="搜索内容" />
+                                <button class="wc-search-close" data-action="voice-search-close">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+                                </button>
+                            </div>
+                            <div class="wc-chips-row" id="wcVoiceChipsRow"></div>
+                            <!-- 批量管理操作栏 (默认隐藏) -->
+                            <div class="wc-batch-bar" id="wcVoiceBatchBar" hidden>
+                                <div class="wc-batch-row">
+                                    <button class="wc-batch-btn wc-batch-selectall" id="wcVoiceBatchSelectAll">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                        全选 (<span id="wcVoiceBatchCount">0</span>)
+                                    </button>
+                                    <span class="wc-batch-hint">点击字卡以选择</span>
+                                    <div class="wc-batch-actions">
+                                        <button class="wc-batch-action" id="wcVoiceBatchGroup" title="分组">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                                            分组
+                                        </button>
+                                        <button class="wc-batch-action" id="wcVoiceBatchBlock" title="屏蔽">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                                            屏蔽
+                                        </button>
+                                    </div>
+                                </div>
+                                <button class="wc-batch-del" id="wcVoiceBatchDelete">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-2 14H7L5 6M10 11v6M14 11v6M9 6V4h6v2"/></svg>
+                                    删除
+                                </button>
+                            </div>
+                            <div class="wc-group-list" id="wcVoiceGroupList"></div>
+                        </div>
+
+                        <!-- 告白内容区 -->
+                        <div id="wcConfessionContent" hidden>
+                            <div class="wc-toolbar">
+                                <div class="wc-toolbar-left">
+                                    <button class="wc-tool-btn" data-action="confession-search" title="搜索">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                                    </button>
+                                    <button class="wc-tool-btn" data-action="confession-sort" title="一键去重">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M6 12h12M10 18h4"/></svg>
+                                    </button>
+                                </div>
+                                <div class="wc-toolbar-right">
+                                    <button class="wc-tool-btn" data-action="confession-import" title="导入">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M17 10l-5 5-5-5"/><path d="M12 3v12"/></svg>
+                                    </button>
+                                    <button class="wc-tool-btn" data-action="confession-export" title="导出">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="wc-search-bar" id="wcConfessionSearchBar" hidden>
+                                <svg class="wc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                                <input type="text" id="wcConfessionSearchInput" class="wc-search-input" placeholder="搜索内容" />
+                                <button class="wc-search-close" data-action="confession-search-close">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+                                </button>
+                            </div>
+                            <div class="wc-chips-row" id="wcConfessionChipsRow"></div>
+                            <div class="wc-group-list" id="wcConfessionGroupList"></div>
+                        </div>
+
+                        <!-- 对方状态内容区 -->
+                        <div id="wcStatusContent" hidden>
+                            <div class="wc-toolbar">
+                                <div class="wc-toolbar-left">
+                                    <button class="wc-tool-btn" data-action="status-search" title="搜索">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                                    </button>
+                                    <button class="wc-tool-btn" data-action="status-group" title="分组管理">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                                    </button>
+                                    <button class="wc-tool-btn" data-action="status-sort" title="一键去重">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M6 12h12M10 18h4"/></svg>
+                                    </button>
+                                </div>
+                                <div class="wc-toolbar-right">
+                                    <button class="wc-tool-btn" data-action="status-import" title="导入">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M17 10l-5 5-5-5"/><path d="M12 3v12"/></svg>
+                                    </button>
+                                    <button class="wc-tool-btn" data-action="status-export" title="导出">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="wc-search-bar" id="wcStatusSearchBar" hidden>
+                                <svg class="wc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                                <input type="text" id="wcStatusSearchInput" class="wc-search-input" placeholder="搜索内容" />
+                                <button class="wc-search-close" data-action="status-search-close">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+                                </button>
+                            </div>
+                            <div class="wc-chips-row" id="wcStatusChipsRow"></div>
+                            <div class="wc-group-list" id="wcStatusGroupList"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="wc-footer wc-footer-double">
+                    <button class="btn wc-add-btn" id="wcAddBtn">
+                        <svg viewBox="0 0 24 24" style="width:18px;height:18px;"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                        新增
+                    </button>
+                    <button class="btn wc-close-btn" id="wcCloseBtn">关闭</button>
+                    <input type="file" id="wcImportFile" accept="application/json,.json,.txt" hidden>
+                </footer>
+            </div>
+        </div>
+
+        <!-- ========== 问卷管理独立页面 ========== -->
+        <div class="modal-mask" id="surveyPageMask">
+            <div class="page-modal glass" id="surveyPage">
+                <!-- 内容由 JS 渲染 -->
+                <div id="surveyPageBody"></div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：新建问卷命名 ========== -->
+        <div class="modal-mask" id="surveyNamingModal">
+            <div class="modal glass">
+                <div class="modal-header">
+                    <h3>新建问卷</h3>
+                    <button class="icon-btn modal-close" data-close="surveyNamingModal">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>问卷名称</label>
+                        <input type="text" id="surveyNameInput" placeholder="请输入问卷名称" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="surveyNamingModal">取消</button>
+                    <button class="btn btn-primary" id="confirmSurveyName">确定</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：问卷删除确认 ========== -->
+        <div class="modal-mask" id="surveyDelModal">
+            <div class="modal wc-small-modal" style="background:var(--glass-bg-strong);">
+                <div class="modal-body" style="padding:28px 20px 20px;text-align:center;">
+                    <div style="font-size:16px;color:var(--text);font-weight:600;margin-bottom:8px;">确定永久删除该问卷？</div>
+                    <div style="font-size:13px;color:var(--text-light);">所有问题和回答将一并删除，不可撤销。</div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="surveyDelModal">取消</button>
+                    <button class="btn btn-primary" id="surveyDelConfirmBtn" style="background:linear-gradient(135deg,#ff8a93,#f56a75);border-color:transparent;">确定</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：删除日期收藏确认 ========== -->
+        <div class="modal-mask" id="favDateDelModal">
+            <div class="modal wc-small-modal" style="background:var(--glass-bg-strong);">
+                <div class="modal-body" style="padding:28px 20px 20px;text-align:center;">
+                    <div style="font-size:16px;color:var(--text);font-weight:600;margin-bottom:8px;">确定删除该日期的收藏？</div>
+                    <div style="font-size:13px;color:var(--text-light);">该日期内收藏的聊天记录将被移除，不可撤销。</div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="favDateDelModal">取消</button>
+                    <button class="btn btn-primary" id="favDateDelConfirmBtn" style="background:linear-gradient(135deg,#ff8a93,#f56a75);border-color:transparent;">确定</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：删除信件确认 ========== -->
+        <div class="modal-mask" id="letterDelModal">
+            <div class="modal wc-small-modal" style="background:var(--glass-bg-strong);">
+                <div class="modal-body" style="padding:28px 20px 20px;text-align:center;">
+                    <div style="font-size:16px;color:var(--text);font-weight:600;margin-bottom:8px;">确定删除这封信？</div>
+                    <div style="font-size:13px;color:var(--text-light);">删除后无法恢复。</div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="letterDelModal">取消</button>
+                    <button class="btn btn-primary" id="letterDelConfirmBtn" style="background:linear-gradient(135deg,#ff8a93,#f56a75);border-color:transparent;">确定</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：信件详情 ========== -->
+        <div class="modal-mask" id="letterDetailModal">
+            <div class="modal letter-detail-modal">
+                <div class="letter-detail-header">
+                    <div class="letter-detail-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+                        <span>寄出的信</span>
+                    </div>
+                    <div class="letter-detail-stamp">
+                        <div class="stamp-top">已送达</div>
+                        <div class="stamp-date" id="letterDetailStampDate">09/28</div>
+                        <div class="stamp-en">DELIVERED</div>
+                    </div>
+                </div>
+                <div class="letter-detail-body">
+                    <div class="letter-detail-date" id="letterDetailDate"></div>
+                    <div class="letter-detail-paper" id="letterDetailPaper">
+                        <div class="letter-detail-recipient" id="letterDetailRecipient"></div>
+                        <div class="letter-detail-content" id="letterDetailContent"></div>
+                        <div class="letter-detail-signoff">
+                            <div class="letter-detail-writer" id="letterDetailWriter"></div>
+                            <div class="letter-detail-date-letter" id="letterDetailDateLetter"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="letter-detail-footer">
+                    <button class="btn btn-secondary" data-close="letterDetailModal">关闭</button>
+                    <button class="btn btn-primary" id="letterDetailEditBtn">编辑</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-mask" id="letterEditModal">
+            <div class="modal letter-detail-modal letter-edit-modal">
+                <div class="letter-detail-header">
+                    <div class="letter-detail-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+                        <span>寄出的信</span>
+                    </div>
+                    <div class="letter-detail-stamp">
+                        <div class="stamp-top">已送达</div>
+                        <div class="stamp-date" id="letterEditStampDate">09/28</div>
+                        <div class="stamp-en">DELIVERED</div>
+                    </div>
+                </div>
+                <div class="letter-detail-body">
+                    <div class="letter-detail-date" id="letterEditDate"></div>
+                    <div class="letter-detail-paper" id="letterEditPaper">
+                        <div class="letter-recipient-row">
+                            <span class="letter-recipient-prefix">致</span>
+                            <input type="text" class="letter-recipient-input" id="letterEditRecipient" placeholder="收信人" />
+                            <span class="letter-recipient-suffix">：</span>
+                        </div>
+                        <textarea class="mailbox-write-textarea letter-edit-content" id="letterEditContent" placeholder="写下你想说的话..."></textarea>
+                        <div class="letter-signoff">
+                            <div class="letter-signoff-row">
+                                <span class="letter-signoff-prefix">——</span>
+                                <input type="text" class="letter-writer-input" id="letterEditWriter" placeholder="写信人" />
+                            </div>
+                            <div class="letter-signoff-row">
+                                <input type="text" class="letter-date-input" id="letterEditDateInput" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="letter-detail-footer">
+                    <button class="btn btn-secondary" id="letterEditCloseBtn">关闭</button>
+                    <button class="btn btn-secondary" id="letterEditCancelBtn">取消</button>
+                    <button class="btn btn-primary" id="letterEditSaveBtn">保存</button>
+                </div>
+            </div>
+        </div>
+        <!-- ========== 收到的回信 浏览弹窗 ========== -->
+        <div class="modal-mask" id="letterReceivedDetailModal">
+            <div class="modal letter-detail-modal letter-received-modal">
+                <div class="letter-detail-header">
+                    <div class="letter-detail-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+                        <span>收到的回信</span>
+                    </div>
+                    <div class="letter-detail-stamp">
+                        <div class="stamp-top">已送达</div>
+                        <div class="stamp-date" id="letterReceivedStampDate">09/28</div>
+                        <div class="stamp-en">DELIVERED</div>
+                    </div>
+                </div>
+                <div class="letter-detail-body">
+                    <div class="letter-detail-date" id="letterReceivedDate"></div>
+                    <div class="letter-detail-paper" id="letterReceivedPaper">
+                        <div class="letter-original-block" id="letterReceivedOriginalBlock">
+                            <div class="letter-original-title">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 17 4 12 9 7"/><path d="M20 18v-2a4 4 0 0 0-4-4H4"/></svg>
+                                <span>你的原信</span>
+                            </div>
+                            <div class="letter-original-content" id="letterReceivedOriginal"></div>
+                            <div class="letter-original-toggle" id="letterReceivedOriginalToggle">展开查看全文</div>
+                        </div>
+                        <div class="letter-detail-recipient" id="letterReceivedRecipient"></div>
+                        <div class="letter-detail-content" id="letterReceivedContent"></div>
+                        <div class="letter-detail-signoff">
+                            <div class="letter-detail-writer" id="letterReceivedWriter"></div>
+                            <div class="letter-detail-date-letter" id="letterReceivedDateLetter"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="letter-detail-footer">
+                    <button class="btn btn-secondary" data-close="letterReceivedDetailModal">关闭</button>
+                    <button class="btn btn-primary" id="letterReceivedDetailEditBtn">编辑</button>
+                </div>
+            </div>
+        </div>
+        <!-- ========== 收到的回信 编辑弹窗 ========== -->
+        <div class="modal-mask" id="letterReceivedEditModal">
+            <div class="modal letter-detail-modal letter-received-modal letter-edit-modal">
+                <div class="letter-detail-header">
+                    <div class="letter-detail-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+                        <span>收到的回信</span>
+                    </div>
+                    <div class="letter-detail-stamp">
+                        <div class="stamp-top">已送达</div>
+                        <div class="stamp-date" id="letterReceivedEditStampDate">09/28</div>
+                        <div class="stamp-en">DELIVERED</div>
+                    </div>
+                </div>
+                <div class="letter-detail-body">
+                    <div class="letter-detail-date" id="letterReceivedEditDate"></div>
+                    <div class="letter-detail-paper" id="letterReceivedEditPaper">
+                        <div class="letter-recipient-row">
+                            <span class="letter-recipient-prefix">致</span>
+                            <input type="text" class="letter-recipient-input" id="letterReceivedEditRecipient" placeholder="收信人" />
+                            <span class="letter-recipient-suffix">：</span>
+                        </div>
+                        <textarea class="mailbox-write-textarea letter-edit-content" id="letterReceivedEditContent" placeholder="写下你想说的话..."></textarea>
+                        <div class="letter-signoff">
+                            <div class="letter-signoff-row">
+                                <span class="letter-signoff-prefix">——</span>
+                                <input type="text" class="letter-writer-input" id="letterReceivedEditWriter" placeholder="写信人" />
+                            </div>
+                            <div class="letter-signoff-row">
+                                <input type="text" class="letter-date-input" id="letterReceivedEditDateInput" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="letter-detail-footer">
+                    <button class="btn btn-secondary" id="letterReceivedEditCloseBtn">关闭</button>
+                    <button class="btn btn-secondary" id="letterReceivedEditCancelBtn">取消</button>
+                    <button class="btn btn-primary" id="letterReceivedEditSaveBtn">保存</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 他的来信 删除确认弹窗 ========== -->
+        <div class="modal-mask" id="letterHisDelModal">
+            <div class="modal wc-small-modal" style="background:var(--glass-bg-strong);">
+                <div class="modal-body" style="padding:28px 20px 20px;text-align:center;">
+                    <div style="font-size:16px;color:var(--text);font-weight:600;margin-bottom:8px;">确定删除这封信？</div>
+                    <div style="font-size:13px;color:var(--text-light);">删除后无法恢复。</div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="letterHisDelModal">取消</button>
+                    <button class="btn btn-primary" id="letterHisDelConfirmBtn" style="background:linear-gradient(135deg,#e8c97a,#d4a946);border-color:transparent;">确定</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 他的来信 浏览弹窗 ========== -->
+        <div class="modal-mask" id="letterHisDetailModal">
+            <div class="modal letter-detail-modal letter-his-modal">
+                <div class="letter-detail-header">
+                    <div class="letter-detail-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        <span>他的来信</span>
+                    </div>
+                    <div class="letter-detail-stamp">
+                        <div class="stamp-top">来信</div>
+                        <div class="stamp-date" id="letterHisStampDate">09/28</div>
+                        <div class="stamp-en">RECEIVED</div>
+                    </div>
+                </div>
+                <div class="letter-detail-body">
+                    <div class="letter-detail-date" id="letterHisDate"></div>
+                    <div class="letter-detail-paper" id="letterHisPaper">
+                        <div class="letter-detail-recipient" id="letterHisRecipient"></div>
+                        <div class="letter-detail-content" id="letterHisContent"></div>
+                        <div class="letter-detail-signoff">
+                            <div class="letter-detail-writer" id="letterHisWriter"></div>
+                            <div class="letter-detail-date-letter" id="letterHisDateLetter"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="letter-detail-footer">
+                    <button class="btn btn-secondary" data-close="letterHisDetailModal">关闭</button>
+                    <button class="btn btn-primary" id="letterHisDetailEditBtn">编辑</button>
+                </div>
+            </div>
+        </div>
+        <!-- ========== 他的来信 编辑弹窗 ========== -->
+        <div class="modal-mask" id="letterHisEditModal">
+            <div class="modal letter-detail-modal letter-his-modal letter-edit-modal">
+                <div class="letter-detail-header">
+                    <div class="letter-detail-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        <span>他的来信</span>
+                    </div>
+                    <div class="letter-detail-stamp">
+                        <div class="stamp-top">来信</div>
+                        <div class="stamp-date" id="letterHisEditStampDate">09/28</div>
+                        <div class="stamp-en">RECEIVED</div>
+                    </div>
+                </div>
+                <div class="letter-detail-body">
+                    <div class="letter-detail-date" id="letterHisEditDate"></div>
+                    <div class="letter-detail-paper" id="letterHisEditPaper">
+                        <div class="letter-recipient-row">
+                            <span class="letter-recipient-prefix">致</span>
+                            <input type="text" class="letter-recipient-input" id="letterHisEditRecipient" placeholder="收信人" />
+                            <span class="letter-recipient-suffix">：</span>
+                        </div>
+                        <textarea class="mailbox-write-textarea letter-edit-content" id="letterHisEditContent" placeholder="写下你想说的话..."></textarea>
+                        <div class="letter-signoff">
+                            <div class="letter-signoff-row">
+                                <span class="letter-signoff-prefix">——</span>
+                                <input type="text" class="letter-writer-input" id="letterHisEditWriter" placeholder="写信人" />
+                            </div>
+                            <div class="letter-signoff-row">
+                                <input type="text" class="letter-date-input" id="letterHisEditDateInput" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="letter-detail-footer">
+                    <button class="btn btn-secondary" id="letterHisEditCloseBtn">关闭</button>
+                    <button class="btn btn-secondary" id="letterHisEditCancelBtn">取消</button>
+                    <button class="btn btn-primary" id="letterHisEditSaveBtn">保存</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 我的回信 删除确认弹窗 ========== -->
+        <div class="modal-mask" id="letterMineDelModal">
+            <div class="modal wc-small-modal" style="background:var(--glass-bg-strong);">
+                <div class="modal-body" style="padding:28px 20px 20px;text-align:center;">
+                    <div style="font-size:16px;color:var(--text);font-weight:600;margin-bottom:8px;">确定删除这封回信？</div>
+                    <div style="font-size:13px;color:var(--text-light);">删除后无法恢复。</div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="letterMineDelModal">取消</button>
+                    <button class="btn btn-primary" id="letterMineDelConfirmBtn" style="background:linear-gradient(135deg,#ffb0c0,#ff90a8);border-color:transparent;">确定</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 我的回信 浏览弹窗 ========== -->
+        <div class="modal-mask" id="letterMineDetailModal">
+            <div class="modal letter-detail-modal letter-mine-modal">
+                <div class="letter-detail-header">
+                    <div class="letter-detail-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+                        <span>我的回信</span>
+                    </div>
+                    <div class="letter-detail-stamp">
+                        <div class="stamp-top">已寄出</div>
+                        <div class="stamp-date" id="letterMineStampDate">09/28</div>
+                        <div class="stamp-en">SENT</div>
+                    </div>
+                </div>
+                <div class="letter-detail-body">
+                    <div class="letter-detail-date" id="letterMineDate"></div>
+                    <div class="letter-detail-paper" id="letterMinePaper">
+                        <div class="letter-original-block" id="letterMineOriginalBlock">
+                            <div class="letter-original-title">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                <span>梦角的来信</span>
+                            </div>
+                            <div class="letter-original-content" id="letterMineOriginal"></div>
+                            <div class="letter-original-toggle" id="letterMineOriginalToggle">展开查看全文</div>
+                        </div>
+                        <div class="letter-detail-recipient" id="letterMineRecipient"></div>
+                        <div class="letter-detail-content" id="letterMineContent"></div>
+                        <div class="letter-detail-signoff">
+                            <div class="letter-detail-writer" id="letterMineWriter"></div>
+                            <div class="letter-detail-date-letter" id="letterMineDateLetter"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="letter-detail-footer">
+                    <button class="btn btn-secondary" data-close="letterMineDetailModal">关闭</button>
+                    <button class="btn btn-primary" id="letterMineDetailEditBtn">编辑</button>
+                </div>
+            </div>
+        </div>
+        <!-- ========== 我的回信 编辑弹窗 ========== -->
+        <div class="modal-mask" id="letterMineEditModal">
+            <div class="modal letter-detail-modal letter-mine-modal letter-edit-modal">
+                <div class="letter-detail-header">
+                    <div class="letter-detail-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+                        <span>我的回信</span>
+                    </div>
+                    <div class="letter-detail-stamp">
+                        <div class="stamp-top">已寄出</div>
+                        <div class="stamp-date" id="letterMineEditStampDate">09/28</div>
+                        <div class="stamp-en">SENT</div>
+                    </div>
+                </div>
+                <div class="letter-detail-body">
+                    <div class="letter-detail-date" id="letterMineEditDate"></div>
+                    <div class="letter-detail-paper" id="letterMineEditPaper">
+                        <div class="letter-original-block" id="letterMineEditOriginalBlock">
+                            <div class="letter-original-title">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                <span>梦角的来信</span>
+                            </div>
+                            <div class="letter-original-content" id="letterMineEditOriginal"></div>
+                            <div class="letter-original-toggle" id="letterMineEditOriginalToggle">展开查看全文</div>
+                        </div>
+                        <div class="letter-recipient-row">
+                            <span class="letter-recipient-prefix">致</span>
+                            <input type="text" class="letter-recipient-input" id="letterMineEditRecipient" placeholder="收信人" />
+                            <span class="letter-recipient-suffix">：</span>
+                        </div>
+                        <textarea class="mailbox-write-textarea letter-edit-content" id="letterMineEditContent" placeholder="写下你想说的话..."></textarea>
+                        <div class="letter-signoff">
+                            <div class="letter-signoff-row">
+                                <span class="letter-signoff-prefix">——</span>
+                                <input type="text" class="letter-writer-input" id="letterMineEditWriter" placeholder="写信人" />
+                            </div>
+                            <div class="letter-signoff-row">
+                                <input type="text" class="letter-date-input" id="letterMineEditDateInput" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="letter-detail-footer">
+                    <button class="btn btn-secondary" id="letterMineEditCloseBtn">关闭</button>
+                    <button class="btn btn-secondary" id="letterMineEditCancelBtn">取消</button>
+                    <button class="btn btn-primary" id="letterMineEditSaveBtn">保存</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 弹窗：图片浏览 ========== -->
+        <div class="modal-mask" id="imageViewerModal">
+            <div class="image-viewer-header">
+                <button class="image-viewer-btn" id="imageViewerBackBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <span class="image-viewer-counter" id="imageViewerCounter">1 / 1</span>
+                <button class="image-viewer-btn" id="imageViewerDeleteBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>
+                </button>
+            </div>
+            <div class="image-viewer-body" id="imageViewerBody">
+                <div class="image-viewer-slider" id="imageViewerSlider"></div>
+            </div>
+        </div>
+
+        <!-- ========== 朋友圈图片浏览弹窗 ========== -->
+        <div class="modal-mask" id="momentsViewerModal" style="display:none;">
+            <div class="mv-header">
+                <button class="mv-header-btn" id="momentsViewerBackBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <span class="mv-header-date" id="momentsViewerDate"></span>
+                <span style="width:24px"></span>
+            </div>
+            <div class="mv-body" id="momentsViewerBody">
+                <div class="mv-slider" id="momentsViewerSlider"></div>
+            </div>
+            <div class="mv-footer">
+                <div class="mv-text" id="momentsViewerText"></div>
+                <div class="mv-actions">
+                    <div class="mv-action" id="momentsViewerLikeBtn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        <span class="mv-action-count" id="momentsViewerLikeCount">0</span>
+                    </div>
+                    <div class="mv-action" id="momentsViewerCommentBtn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                        <span class="mv-action-count" id="momentsViewerCommentCount">0</span>
+                    </div>
+                    <div class="mv-detail-link" id="momentsViewerDetailBtn">详情 ›</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 朋友圈聚合页评论弹窗 ========== -->
+        <div class="modal-mask" id="momentsFeedCommentModal" style="display:none;">
+            <div class="moment-feed-comment-bar">
+                <div class="moment-feed-comment-preview" id="feedCommentPreview"></div>
+                <input type="text" class="mv-detail-input" id="momentsFeedCommentInput" placeholder="发表评论...">
+                <button class="mv-detail-emoji-btn" id="momentsFeedEmojiBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                </button>
+                <button class="mv-detail-img-btn" id="momentsFeedImgBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                </button>
+                <button class="mv-detail-send" id="momentsFeedCommentSendBtn">发送</button>
+                <input type="file" id="feedCommentFileInput" accept="image/*" style="display:none;">
+            </div>
+        </div>
+
+        <!-- ========== 聚合页评论表情面板 ========== -->
+        <div class="modal-mask" id="momentsFeedEmojiModal" style="display:none;">
+            <div class="moment-feed-emoji-panel">
+                <div class="emoji-tabs">
+                    <button class="emoji-tab active" data-tab="common">通用</button>
+                    <button class="emoji-tab" data-tab="exclusive">专属</button>
+                </div>
+                <div class="emoji-grid" id="feedEmojiGrid"></div>
+            </div>
+        </div>
+
+        <!-- ========== 聚合页评论删除小卡片 ========== -->
+        <div id="feedCommentDelCard">
+            <button id="feedCommentDelBtn">删除</button>
+        </div>
+
+        <!-- ========== 朋友圈详情页面 ========== -->
+        <div id="momentsDetailPage" class="page">
+            <header class="mv-detail-header">
+                <button class="mv-detail-back" id="momentsDetailBackBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <span class="mv-detail-title">详情</span>
+                <button class="mv-detail-more" id="momentsDetailMoreBtn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg>
+                </button>
+            </header>
+            <div class="mv-detail-body" id="momentsDetailBody"></div>
+            <div class="mv-detail-input-bar">
+                <input type="text" class="mv-detail-input" id="momentsDetailCommentInput" placeholder="发表评论...">
+                <button class="mv-detail-emoji-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                </button>
+                <button class="mv-detail-img-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                </button>
+                <button class="mv-detail-send" id="momentsDetailSendBtn">发送</button>
+            </div>
+        </div>
+
+        <!-- ========== 评论页面 ========== -->
+        <div id="momentsCommentPage" class="page">
+            <header class="mv-comment-header">
+                <button class="mv-comment-back" id="momentsCommentBackBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <span class="mv-comment-title">评论</span>
+                <button class="mv-comment-send" id="momentsCommentSendBtn">发送</button>
+            </header>
+            <div class="mv-comment-input-wrap">
+                <input type="text" class="mv-comment-input" id="momentsCommentInput" placeholder="说点什么...">
+            </div>
+            <div class="mv-comment-list" id="momentsCommentList"></div>
+        </div>
+
+    </div>
+        <!-- ========== 弹窗：删除朋友圈确认 ========== -->
+        <div class="modal-mask" id="momentDelModal">
+            <div class="modal wc-small-modal" style="background:var(--glass-bg-strong);">
+                <div class="modal-body" style="padding:28px 20px 20px;text-align:center;">
+                    <div style="font-size:16px;color:var(--text);font-weight:600;margin-bottom:8px;">确定删除这条朋友圈？</div>
+                    <div style="font-size:13px;color:var(--text-light);">删除后无法恢复。</div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-close="momentDelModal">取消</button>
+                    <button class="btn btn-primary" id="momentDelConfirmBtn" style="background:linear-gradient(135deg,#ff8a93,#f56a75);border-color:transparent;">确定</button>
+                </div>
+            </div>
+        </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
